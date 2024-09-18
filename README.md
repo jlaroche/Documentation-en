@@ -1,2 +1,4 @@
 # Documentation
-A source for help and training.
+
+View the [online documentation](https://climatesmartagcollab.github.io/Documentation/)
+
