@@ -1,3 +1,7 @@
+layout: page
+title: "Main"
+permalink: /main
+
 [View the Documentation](https://climatesmartagcollab.github.io/Documentation/)
 
 # Welcome to the Documentation Site
@@ -7,6 +11,7 @@ Here you will find a collection of links and documents to help you navigate the 
 # Introduction to using GitHub
 
 Tutorial incoming.
+[GitHub help](github.md)
 
 
 # Data Harmonization
