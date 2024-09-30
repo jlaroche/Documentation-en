@@ -30,7 +30,7 @@ jobs:
     defaults:
       run:
         working-directory: docs
-    steps:
+  steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
