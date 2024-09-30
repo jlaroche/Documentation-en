@@ -32,8 +32,7 @@ github_username:
 theme: just-the-docs
 plugins:
   - jekyll-feed
-
- Template Repository: https://github.com/climatesmartagcollab/Documentation
+Template Repository: https://github.com/climatesmartagcollab/Documentation
 
 # Exclude from processing.
 # The following items will not be processed, by default.
