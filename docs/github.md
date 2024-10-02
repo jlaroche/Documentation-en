@@ -23,11 +23,11 @@ Because GitHub is so often used by coders, help material is typically written by
 
 This guide is written for people who are typically not coders but want to benefit from some of the great features GitHub can offer.
 
-Below is an example of a GitHub Repository. A repository typically contains all the files related to a project. For people writing and sharing data stanadards (or ontologies or other text-based documents), a repository could hold the information for a data standard.
+Below is an example of a GitHub Repository. A repository typically contains all the files related to a project. For people writing and sharing data standards (or ontologies or other text-based documents), a repository could hold the information for a data standard.
 
 ![GitHub initial navigation](/assets/images/github_initial_navigation.PNG)
 
-The name of this repository is called HUB-Harmonization. It is a public repository which means that anyone on the web can see it, but only people with permission will be able to edit it.
+The name of this repository pictured above is called HUB-Harmonization. It is a public repository which means that anyone on the web can see it, but only people with permission will be able to edit it.
 
 In the purple box is a description written by the owner of the repository which describes what is in the repository.
 
@@ -65,13 +65,13 @@ You can learn more about writing in markdown on the [GitHub Markdown page](https
 ### Saving in GitHub webpage
 Finally, how do you Save your results in GitHub?
 
-In the web interface, the green `Commit Changes...` button performs the functions of saving your work. This pulls up the Commit Changes box.
+In the web interface, the green `Commit Changes...` button performs the function of saving your work. Clicking on the `Commit Changes...` button pulls up the Commit Changes box (pictured below).
 
 ![Commit changes box](/assets/images/github_commit_changes.png)
 
 Because GitHub is such a collaborative environment, when you Commit Changes, you can write messages to the community about what changes you made and any reasoning. Sometimes if you need to undo work it can be very helpful to have good commit messages and descriptions. In an even more formalized environment of development where commits must be reviewed before being accepted (e.g. when developing an official standard) good commit messages can help the approval process.
 
-After you have written your message and description you will Commit directly to the main branch. You can write all kinds of documents using GitHub without ever having to use branches. Branches are a great tool when you want to have your main, official document on Main, and you can create branches when you want to work on the next version before it becomes official.
+After you have written your message and description you will Commit directly to the main branch. You can accomplish a lot in GitHub only ever using the Main branch. Branches are a great tool when you want to have your main, official document on Main, and you can create branches when you want to work on the next version before it becomes official.
 
 Commit your changes directly to the main brance and press the green button `Commit Changes` to save your work in GitHub. Now you and everyone else with access to the repository can view your work.
 
