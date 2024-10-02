@@ -24,3 +24,6 @@ Tutorial incoming.
 
 
 # Data Analysis
+
+# Note for Carly
+bundle exec jekyll serve
