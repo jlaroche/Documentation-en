@@ -7,6 +7,13 @@ nav_order: 2
 Starting learning about GitHub here.
 
 # Introduction to a GitHub Repository
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Wayfinding and Navigation
 
@@ -64,7 +71,7 @@ In the web interface, the green `Commit Changes...` button performs the function
 
 Because GitHub is such a collaborative environment, when you Commit Changes, you can write messages to the community about what changes you made and any reasoning. Sometimes if you need to undo work it can be very helpful to have good commit messages and descriptions. In an even more formalized environment of development where commits must be reviewed before being accepted (e.g. when developing an official standard) good commit messages can help the approval process.
 
-After you have written your message and descrition you will Commit directly to the main branch. You can write all kinds of documents using GitHub without ever having to use branches. Branches are a great tool when you want to have your main, official document on Main, and you can create branches when you want to work on the next version before it becomes official.
+After you have written your message and description you will Commit directly to the main branch. You can write all kinds of documents using GitHub without ever having to use branches. Branches are a great tool when you want to have your main, official document on Main, and you can create branches when you want to work on the next version before it becomes official.
 
 Commit your changes directly to the main brance and press the green button `Commit Changes` to save your work in GitHub. Now you and everyone else with access to the repository can view your work.
 
@@ -77,3 +84,5 @@ In the "Name your file..." box you can also change what folder you want your new
 Ooops, maybe you mispelled your folder name, how do you undo it? Type `../` into the "Name your file..." box (remember the directory `..` means go up a directory),and you will go up one folder level and now you can type your folder name correctly. 
 
 If you uploaded a picture and you want to put it in the pictures folder you have to wait until after it is uploaded. Then, click on the pencil icon to edit the file. You can't edit the image file directly because it is a binary file, but you can change the name. Add to the front of your filename `images/` and you will put your file in a new images directory.
+
+- written by Carly Huitema

@@ -11,9 +11,7 @@ nav_order: 1
 Here you will find a collection of links and documents to help you navigate the work of the Data Hub.
 
 # Introduction to using GitHub
-
-Tutorial incoming.
-[GitHub help](github.md)
+Learn how to start with GitHub with our [how to start with GitHub](github.md) tutorial only using your web browser.
 
 
 # Data Harmonization
@@ -25,5 +23,4 @@ Tutorial incoming.
 
 # Data Analysis
 
-# Note for Carly
-bundle exec jekyll serve
+
