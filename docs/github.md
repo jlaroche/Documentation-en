@@ -4,8 +4,6 @@ title: GitHub Help
 nav_order: 2
 ---
 
-Starting learning about GitHub here.
-
 # Introduction to a GitHub Repository
 {: .no_toc }
 
@@ -14,6 +12,8 @@ Starting learning about GitHub here.
 
 1. TOC
 {:toc}
+
+Begin to learn about using GitHub here.
 
 ## Wayfinding and Navigation
 
@@ -81,7 +81,7 @@ On the main code page of GitHub (click on <>Code at the top of the page to get t
 
 In the "Name your file..." box you can also change what folder you want your new file to be in. If you want your new `filename.seq` file to be in a folder/directory called "sequences", type `sequences/filename.seq`. As you type the forward slash / you will automatically create the new folder/directory.
 
-Ooops, maybe you mispelled your folder name, how do you undo it? Type `../` into the "Name your file..." box (remember the directory `..` means go up a directory),and you will go up one folder level and now you can type your folder name correctly. 
+Oops, maybe you mispelled your folder name, how do you undo it? Type `../` into the "Name your file..." box (remember the double dots `..` means go up a directory),and you will go up one folder level and now you can type your folder name correctly. 
 
 If you uploaded a picture and you want to put it in the pictures folder you have to wait until after it is uploaded. Then, click on the pencil icon to edit the file. You can't edit the image file directly because it is a binary file, but you can change the name. Add to the front of your filename `images/` and you will put your file in a new images directory.
 
