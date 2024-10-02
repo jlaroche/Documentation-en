@@ -8,22 +8,8 @@ nav_order: 1
 ---
 # Welcome to the Documentation Site
 
-Here you will find a collection of links and documents to help you navigate the work of the Data Hub.
+Here the Data Hub is collecting resources that will be useful to Data Hub members. 
 
-# Introduction to using GitHub
-Learn how to start with GitHub with our [how to start with GitHub](github.md) tutorial only using your web browser.
-
-
-# Data Management
-Learn how to [document your data using a schema](semantic_engine.md).
-
-
-
-
-# Data Governance
-
-
-
-# Data Analysis
+If you would like to see more content hosted here let us know in the Data Hub Discussion board.
 
 

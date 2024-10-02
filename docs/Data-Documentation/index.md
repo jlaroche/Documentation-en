@@ -2,19 +2,9 @@
 layout: default
 title: Data Documentation
 nav_order: 3
-has_children: true
 ---
 
 # Documenting Data 
-{: .no_toc }
-
-## Table of Contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
-All datasets have a schema, either implicit or explicit. The goal of the Semantic Engine is to take your knowledge of the data and document that explicitly using a schema. 
 
 ## Data Schemas
 

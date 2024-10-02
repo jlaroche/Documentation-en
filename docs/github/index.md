@@ -25,7 +25,7 @@ This guide is written for people who are typically not coders but want to benefi
 
 Below is an example of a GitHub Repository. A repository typically contains all the files related to a project. For people writing and sharing data standards (or ontologies or other text-based documents), a repository could hold the information for a data standard.
 
-![GitHub initial navigation](/assets/images/github_initial_navigation.PNG)
+![GitHub initial navigation](../assets/images/github_initial_navigation.PNG)
 
 The name of this repository pictured above is called HUB-Harmonization. It is a public repository which means that anyone on the web can see it, but only people with permission will be able to edit it.
 
@@ -37,7 +37,7 @@ Typically in the files of a repository is a file called README.md. GitHub recogn
 
 If you click on the folder `data_standards` you can see what documents have been added to this folder.
 
-![GitHub files navigation](/assets/images/github_files_navigation.PNG)
+![GitHub files navigation](../assets/images/github_files_navigation.PNG)
 
 After clicking on `data_standards` you enter the files view where you can navigate the contents of the repository. In the folder/directory `data_standards` there is another readme.md (red box), which is recognized by GitHub and the contents shown by default below (green arrow). 
 
@@ -49,14 +49,14 @@ The easiest way to work with GitHub is to do all your editing directly in the we
 
 In the [Sandbox repository](https://github.com/ClimateSmartAgCollab/sandbox) of the ClimateSmartAgCollab organization, or in your own personal repository you can edit the readme.md markdown file.
 
-![GitHub file options](/assets/images/github_file_options.png)
+![GitHub file options](../assets/images/github_file_options.png)
 
 In the purple box, from left to right, Raw=look at the raw code not the nicely formatted version you are currently seeing, two boxes=copy, down-arrow=download the file and the pencil lets you edit the file.
 
 Click on the pencil icon to begin editing the readme markdown file directly in your web browser.
 
 
-![Writing markdown](/assets/images/github_writing_markdown.png)
+![Writing markdown](../assets/images/github_writing_markdown.png)
 
 Here you can find some text written in Markdown. If you click on the preview button you can preview how the markdown will be formatted. Try to add your name and favorite animal to the table. If the table isn't there, look at how it is written in the picture above and recreate it.
 
@@ -67,7 +67,7 @@ Finally, how do you Save your results in GitHub?
 
 In the web interface, the green `Commit Changes...` button performs the function of saving your work. Clicking on the `Commit Changes...` button pulls up the Commit Changes box (pictured below).
 
-![Commit changes box](/assets/images/github_commit_changes.png)
+![Commit changes box](../assets/images/github_commit_changes.png)
 
 Because GitHub is such a collaborative environment, when you Commit Changes, you can write messages to the community about what changes you made and any reasoning. Sometimes if you need to undo work it can be very helpful to have good commit messages and descriptions. In an even more formalized environment of development where commits must be reviewed before being accepted (e.g. when developing an official standard) good commit messages can help the approval process.
 
