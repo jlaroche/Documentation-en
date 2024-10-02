@@ -53,5 +53,27 @@ Click on the pencil icon to begin editing the readme markdown file directly in y
 
 Here you can find some text written in Markdown. If you click on the preview button you can preview how the markdown will be formatted. Try to add your name and favorite animal to the table. If the table isn't there, look at how it is written in the picture above and recreate it.
 
-You can find markdown documentation on the [GitHub Markdown page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+You can learn more about writing in markdown on the [GitHub Markdown page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
+### Saving in GitHub webpage
+Finally, how do you Save your results in GitHub?
+
+In the web interface, the green `Commit Changes...` button performs the functions of saving your work. This pulls up the Commit Changes box.
+
+![Commit changes box](/assets/images/github_commit_changes.png)
+
+Because GitHub is such a collaborative environment, when you Commit Changes, you can write messages to the community about what changes you made and any reasoning. Sometimes if you need to undo work it can be very helpful to have good commit messages and descriptions. In an even more formalized environment of development where commits must be reviewed before being accepted (e.g. when developing an official standard) good commit messages can help the approval process.
+
+After you have written your message and descrition you will Commit directly to the main branch. You can write all kinds of documents using GitHub without ever having to use branches. Branches are a great tool when you want to have your main, official document on Main, and you can create branches when you want to work on the next version before it becomes official.
+
+Commit your changes directly to the main brance and press the green button `Commit Changes` to save your work in GitHub. Now you and everyone else with access to the repository can view your work.
+
+## Creating new files and folders in GitHub webpage
+
+On the main code page of GitHub (click on <>Code at the top of the page to get there) you can add files either by creating a new file (a new text file) or by uploading a file. Give your new file a name in the "Name your file..." box and a filename extensions (e.g. .md for a markdown file).
+
+In the "Name your file..." box you can also change what folder you want your new file to be in. If you want your new `filename.seq` file to be in a folder/directory called "sequences", type `sequences/filename.seq`. As you type the forward slash / you will automatically create the new folder/directory.
+
+Ooops, maybe you mispelled your folder name, how do you undo it? Type `../` into the "Name your file..." box (remember the directory `..` means go up a directory),and you will go up one folder level and now you can type your folder name correctly. 
+
+If you uploaded a picture and you want to put it in the pictures folder you have to wait until after it is uploaded. Then, click on the pencil icon to edit the file. You can't edit the image file directly because it is a binary file, but you can change the name. Add to the front of your filename `images/` and you will put your file in a new images directory.
