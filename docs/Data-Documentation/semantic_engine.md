@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Semantic Engine
+title: Write a schema
 parent: Data Documentation
-nav_order: 1
+nav_order: 3
 ---
 
-# Documenting Data 
+# Write a schema
 {: .no_toc }
 
 ## Table of Contents
@@ -18,7 +18,7 @@ All datasets have a schema, either implicit or explicit. The goal of the Semanti
 
 To easily write machine-readable schemas in the OCA schema language, the organization Agri-food Data Canada from the University of Guelph has developed a friendly user-interface for documenting data and using the schemas that have been generated.
 
-## Write a Schema
+## Using the Semantic Engine
 
 The [Semantic Engine](https://www.semanticengine.org) has been developed to be a self-directed site for researchers to document any table-based research data. Throughout the site there is helpful documentation as well as a [tutorial webpage](https://agrifooddatacanada.github.io/OCA_Composer_help_pages/en/TutorialAll/). 
 

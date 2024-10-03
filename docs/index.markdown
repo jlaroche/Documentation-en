@@ -12,4 +12,17 @@ Here the Data Hub is collecting resources that will be useful to Data Hub member
 
 If you would like to see more content hosted here let us know in the Data Hub Discussion board.
 
+# The FAIR Data Principles
 
+Published in 2016, the FAIR guiding principles help researchers improve their digital assets (such as data) by improving the:
+* F - Findability
+* A - Accessibility
+* I - Interoperability
+* R - Reusability
+
+This Documentation Site provides resources to help researchers ultimately improve FAIRness of their research outputs.
+
+## FAIR resources
+Official [GO-FAIR website](https://www.go-fair.org/fair-principles/)
+
+EOSC has released a [resource site](https://catalogue.fair-impact.eu/resources) to help find ways to implement FAIR principles.
