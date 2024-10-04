@@ -28,3 +28,5 @@ Official [GO-FAIR website](https://www.go-fair.org/fair-principles/)
 EOSC has released a [resource site](https://catalogue.fair-impact.eu/resources) to help find ways to implement FAIR principles.
 
 The [Digital Research Alliance of Canada has links to many training resources](https://alliancecan.ca/en/services/research-data-management/learning-and-training/training-resources) which would be useful to researchers.
+
+- written by Carly Huitema

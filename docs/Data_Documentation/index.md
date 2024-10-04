@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Data Documentation
-nav_order: 3
+nav_order: 4
 ---
 
 # Documenting Data 
@@ -24,3 +24,5 @@ Some Considerations for Documenting Data
 * **Data Licensing**: Provide clear information about how others can use, share, or modify the data, including any applicable licensing terms.
 * **Data Quality Standards**: Indicate any quality control measures applied to the data to ensure accuracy and reliability.
 * **Data Annotations**: Include any relevant annotations or notes that can provide additional insight into the dataset or clarify complex aspects.
+
+- written by Carly Huitema
