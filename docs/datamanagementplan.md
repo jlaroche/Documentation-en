@@ -14,11 +14,14 @@ Data Management Plans contain important information for project participants suc
 
 Be sure that all team members working in the project have the relevant information from the DMP, for example, that they know the file naming conventions. This information can be shared directly by making the DMP available, or it can be used to generate a lab and project data Standard Operating Procedure (SOP). The SOP acts like the syllabus for a course; it outlines the data essentials and expectations for the lab and/or project.
 
+{: .highlight }
+Share contents of your DMP so all your project members know data management expectations.
+
 Data Management Plans are living documents, they are expected to be updated and changed throughout the lifecycle of the project. The PDF versions of the DMP exported from Porage DMP Assistant contain the last modified date to help researchers identify which revision they are referencing.
 
 ## Samples of lab data SOPs
 
-[Schulte Moore Lab Data Management SOP](https://faculty.sites.iastate.edu/lschulte/lab-data-and-file-management-sops)
-[Duke School of Medicine sample data SOP template (pdf)](https://medschool.duke.edu/sites/default/files/2021-10/data_management_sop_guidance_shared_resource.pdf)
+* [Schulte Moore Lab Data Management SOP](https://faculty.sites.iastate.edu/lschulte/lab-data-and-file-management-sops)
+* [Duke School of Medicine sample data SOP template (pdf)](https://medschool.duke.edu/sites/default/files/2021-10/data_management_sop_guidance_shared_resource.pdf)
 
 - written by Carly Huitema
