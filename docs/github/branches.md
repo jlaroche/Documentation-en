@@ -16,6 +16,10 @@ nav_order: 2
 
 Branches in GitHub allow teams to work on different versions of documentation simultaneously without affecting the main version. They enable experimentation, content updates, or large revisions in isolation. Once changes are finalized and reviewed, they can be merged into the main branch, ensuring the primary documentation remains stable while updates are developed. This approach supports collaboration, version control, and smoother integration of changes.
 
+## A Scenario with Branching
+
+Consider this scenario and then read on to learn the details: You are collaborating on developing a standard (such as a controlled vocabulary). Your group has released one version already and you are working on the next release which is on its own 'next release' branch. To make your edits, first you create your editing branch from this next release branch and make the changes. You commit your changes to your branch, and then you put in a Pull Request (PR) to have your changes accepted in the next release branch. At the next scheduled review, your group goes through all the PRs, reading the descriptions, looking at the changes and deciding if they will accept the changes or send the work back with comments. Your changes are accepted and your branch is merged into the next release branch. When the next release branch is finalized, you will release the next version of your controlled vocabulary from this work.
+
 ## Branch Names
 
 Deciding on branch naming conventions can make it much easier to manage your work. For example, decide on a few categories of branch names (e.g. fix, new, feature etc.) and use them as terms for the start of your branch name. Separate your branch category from the details with a /. e.g. fix/animal would be a branch name.
@@ -26,7 +30,7 @@ After deciding on the name for your branch it is time to create it. One way to c
 
 ![Add a new branch](../assets/images/new_branch.png)
 
-After you have created a branch you can find it, and others back on the branch button. In the above example the branch was made from main, but if you were working on a new release (e.g. branch release/2), your branch could be off this next release branch instead.
+After you have created a branch you can find it, and others back on the branch button. In the above example the branch was made from main, but if you were working on a new release (e.g. branch release/v2), your branch could be off this next release branch instead.
 
 If you are working in GitHub and can't find the changes you were sure you were making, be sure to check which branch you are currently on!
 
@@ -42,7 +46,7 @@ After you have committed the changes you can compare the changes by switching br
 
 ## Raise a Pull Request
 
-After you've made changes on your branch and verified that they do what you expected you probably want to add your changes to another branch in the repository (e.g. into main branch or into release/2). 
+After you've made changes on your branch and verified that they do what you expected you probably want to add your changes to another branch in the repository (e.g. into main branch or into release/v2). 
 
 To merge your changes you need to perform what is called a Pull Request (or PR) in GitHub. You don't push your changes onto the other branch, you request to have your changes pulled in.
 
@@ -80,7 +84,18 @@ Once a branch has been merged you can may choose to delete the source branch (fo
 
 ![Delete a branch](../assets/images/github_delete_branch.png)
 
+## Merge Conflicts
 
+Merge conflicts happen when you try to merge branches that have competing commits, for example if two people try to change the same line of the file. The GitHub official documentation site has an excellent review of [how to resolve merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github). 
+
+
+## Summary
+
+Now you have the tools to work collaboratively on the shared project using GitHub. Whether it is code or documentation GitHub lets you create branches to explore work, raise PRs to merge your work back and ultimately merge your work into the ongoing projects official branches. If you are working by yourself you won't need to wait for approval before merging. Without adding branch protection rules (not covered in this tutorial) you'll see that you can raise PRs and merge without waiting for approval. With GitHub all change are recorded in the commit record so you will always be able to go and see who made changes and what those changes were.
+
+Those looking for a deep dive into GitHub branching models can read [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/) which has a code focus but could be relevant to documentation projects as well (where bugs=typos for example).
+
+- written by Carly Huitema
 
 
 
