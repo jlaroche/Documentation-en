@@ -96,7 +96,11 @@ What happens if are contributing to a standard/documentation repository but you 
 
 Now you have the tools to work collaboratively on the shared project using GitHub. Whether it is code or documentation GitHub lets you create branches to explore work, raise PRs to merge your work back and ultimately merge your work into the ongoing projects official branches. If you are working by yourself you won't need to wait for approval before merging. Without adding branch protection rules (not covered in this tutorial) you'll see that you can raise PRs and merge without waiting for approval. With GitHub all change are recorded in the commit record so you will always be able to go and see who made changes and what those changes were.
 
+## Further Resources
+
 Those looking for a deep dive into GitHub branching models can read [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/) which has a code focus but could be relevant to documentation projects as well (where bugs=typos for example).
+
+More details on collaborating with GitHub can be found at the [OBO Semantic Engineering Training](https://oboacademy.github.io/obook/tutorial/github-fundamentals/) documentation site.
 
 - written by Carly Huitema
 
