@@ -14,7 +14,7 @@ nav_order: 3
 1. TOC
 {:toc}
 
-GitHub Desktop helps you move your repository contents onto your computer. This is relevant when you want to run the code on your computer for analysis, or if you want to use a text editor on your computer because the web editor of the GitHub webpage isn't sufficient.
+GitHub Desktop helps you copy your repository contents onto your computer. This is relevant when you want to run the code on your computer for analysis, or if you want to use a text editor on your computer because the web editor of the GitHub webpage isn't sufficient. You use GitHub Desktop to keep your local version in sync with the GitHub version of the respository.
 
 First you need to [install GitHub desktop (available for Windows and MacOS)](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop).
 

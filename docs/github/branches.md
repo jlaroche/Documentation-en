@@ -46,9 +46,9 @@ After you have committed the changes you can compare the changes by switching br
 
 ## Raise a Pull Request
 
-After you've made changes on your branch and verified that they do what you expected you probably want to add your changes to another branch in the repository (e.g. into main branch or into release/v2). 
+* A **Pull Request** is a formal request to merge changes from one branch (such as fix/animal in our example) into another branch (often the main or master branch or release/v2 in our example). _Purpose_: To propose, review, and discuss changes before they are merged into the main codebase. It allows other team members to review your code, comment on it, and request changes if necessary.
 
-To merge your changes you need to perform what is called a Pull Request (or PR) in GitHub. You don't push your changes onto the other branch, you request to have your changes pulled in.
+To merge your changes you need to perform a Pull Request (or PR) in GitHub. You don't push your changes onto the other branch, you request to have your changes pulled in.
 
 Click on `Pull requests` and create a `New pull request`.
 
