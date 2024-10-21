@@ -1,12 +1,12 @@
 # Documentation
 
-This repository contains documentation written for Just the Docs template.
+This repository contains documentation about research data management (RDM) and is written using the Just the Docs template.
 
-You can view this documentation as a nice, readable website by going to: [online documentation](https://climatesmartagcollab.github.io/Documentation-en/)
+You can view this RDM documentation as a nice, readable website by going to: [online documentation](https://climatesmartagcollab.github.io/Documentation-en/)
 
 ## Contribute to Documentation
 
-The minimal GitHub skills to contribute to Documentation are documented in [GitHub help](https://climatesmartagcollab.github.io/Documentation-en/github/) and [GitHub branches](https://climatesmartagcollab.github.io/Documentation-en/github/branches.html). You may want to sync this repository to a local version and edit the text files there, pushing your changes back up to the repository. If you want to edit files locally, you will need to learn [GitHub Desktop](https://climatesmartagcollab.github.io/Documentation-en/github/githubdesktop.html).
+The minimal GitHub skills to contribute to Documentation are found in [GitHub help](https://climatesmartagcollab.github.io/Documentation-en/github/) and [GitHub branches](https://climatesmartagcollab.github.io/Documentation-en/github/branches.html). You may want to sync this repository to a local version and edit the text files there, pushing your changes back up to the repository. If you want to edit files locally, you will need to learn [GitHub Desktop](https://climatesmartagcollab.github.io/Documentation-en/github/githubdesktop.html).
 
 Contributions should be authored in a separate branch or fork (depending on user access). When documentation is ready to be merged put in a Pull Request to merge the documentation to Main branch. The PR review and merge will be done by the Documentation manager. 
 
