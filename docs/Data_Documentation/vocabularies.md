@@ -5,7 +5,7 @@ parent: Data Documentation
 nav_order: 4
 ---
 
-# Using Standardized Vocabularies
+# Using Semantic Artefacts
 {: .no_toc }
 
 ## Table of Contents
@@ -14,6 +14,10 @@ nav_order: 4
 1. TOC
 {:toc}
 
-There are many places to find ontologies as a source for terms, the organization CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
+There are many places to find semantic artefacts such as ontologies, taxonomies and vocabularies as a source for terms.
+
+- The organization CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
+- [AgroPortal](https://agroportal.lirmm.fr/) is another source of semantic artefacts.
+
 
 - written by Carly Huitema
