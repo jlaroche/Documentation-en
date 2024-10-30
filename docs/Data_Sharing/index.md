@@ -10,9 +10,13 @@ Satisfying FAIR data management principles for data sharing involves several adm
 
 Administrative:
 
-* Identifying a person or team responsible for managing project data storage and access.
-* Making clear how project data may be used and what attribution is required, if any.  This should be covered in data licensing and governance documentation.
+* Identifying a person or team responsible for managing project shared data specifications, storage and access.
+  * This includes the responsibility of determining what shared data is as a subset of raw or analyzed project data.
+  * Data sharing information privacy and anonymization requirements need to be defined.
+* Making clear how project data may be used and what attribution is required, if any.
+  * Data licensing and governance documentation needs to be provided.
 * Identify contact role(s) and processes within an organization for handling access requests.
+* If desired, pre-defined data usage agreements between trusted parties can be established.
   
 Hosting:
 
