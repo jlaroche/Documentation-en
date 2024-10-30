@@ -16,7 +16,7 @@ Administrative:
   
 Hosting:
 
-* Determining a public or access-controlled repository to host project data.
+* Determining a public or access-controlled repository to host project data. We recommend
   * [Borealis](https://borealisdata.ca/), the Canadian Dataverse Repository (previously called Dataverse).  See [Data Sharing using Borealis](https://learn.scholarsportal.info/modules/portage/dataverse-101-module-1/) for an introduction to data sharing and the Borealis platform.
 * Ensuring Secure (tamperproof) upload and download of data.
 * Implementing and maintaining access control as necessary.
