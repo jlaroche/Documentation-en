@@ -7,7 +7,7 @@ nav_order: 6
 # Data Standardization
 ### Motivation
 
-While a project’s datasets may have been built and hosted to support the immediate needs of its research aims, extra attention is usually required to create standardised data products so they can be found and reused by other stakeholders (academic, government, industry, and other research agency staff) with minimal effort.  Various tools and artifacts enable discoverability and reuse:
+While a project’s datasets may have been built and hosted to support the immediate needs of its research aims, extra attention is usually required to create standardised data products so they can be found and reused by other stakeholders (academic, government, industry, and other research agency staff) with minimal effort. Up-front attention to data standardization encourages reuse and avoids later costly work required for peer-to-peer data mapping as new downstream users of project data are encountered.  Various tools and artifacts enable discoverability and reuse:
 
 * Dataset table and potentially field-level information can be extrated from [data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) for display in agency or public FAIR data catalogues like [FAIRsharing.org](https://fairsharing.org/) or Google's [dataset search](https://datasetsearch.research.google.com/) which utilizes the general https://schema.org/Dataset framework for describing data. 
 * Datasets can be queried to report dataset size, record quantity, and perhaps spatiotemporal scope (a sample collection's collection time duration and location(s) for example) for display in data catalogues.
@@ -31,13 +31,13 @@ The vision of automating the **discovery, retrieval, and reuse** of datasets the
     * This has the side benefit of facilitiating API development and/or exposing the structural information to enable users to query the dataset directly.
   * The database's content can be described by publishing its record counts and serialization byte size information, and demographic/spatiotemporal/contextual tally of terms used in actual data.
 
-The above points support standardizing the data discovery process, and some attention will also be required to standardize the retrieval process through the interplay between user authentication and permission and content privacy rules.  The main challenge that remains to achieve inexpensive, efficient data harmonizatio is to standardize project data schemes and databases down to the field name and picklist value level - or at least views of them.  (If an idiosyncratic dataset has its own table/object and field names, and its own picklist values which frequently don't match 1-1 with any vocabulary commonly in use, this leads to the mapping of its content to other upstream data providers, or downstream data users.  If done directly, this becomes an expensive peer-to-peer mapping exercise that repeats as each new provider or user shows up).
+The above points support standardizing the data **discovery** process, and some attention will also be required to standardize the **access and retrieval** process through the interplay between user authentication and permission and content privacy rules.  The main challenge that remains to achieve **reuse** - inexpensive, efficient data harmonization - is to standardize project data schemes and databases down to the field name and picklist value level - or at least data views of them.  (If an idiosyncratic dataset has its own table/object and field names, and its own picklist values which frequently don't match 1-1 with any vocabulary commonly in use, this leads to the mapping of its content to other upstream data providers, or downstream data users.  If done directly, this becomes an expensive peer-to-peer mapping exercise that repeats as each new provider or user shows up).
 
-To evolve towards a federated data future, an extra "applied ontology" framework layer has to be added.
+To evolve towards a federated data future, an extra "applied ontology" framework layer has to be added which essentially attempts to externalize as much of the language a database uses as possible, essentially enabling it to join a larger semantically interoperable community of datasets.  Other benefits accrue - database development personell become aquainted with 3rd party standardized vocabularies rather than having to do the work to unwittingly maintain partial mirrors of such vocabularies.
 
 ### Ontology
 
-We begin with a short discussion of what applied ontologies are, and why certain features of them are needed.
+We begin with a short discussion of what applied ontologies are, how they differ from simpler kinds of standardized vocabulary, and why certain features of them are needed to achieve a federatable data future.
 
 * Unique identifiers
 * Globally resolvable
