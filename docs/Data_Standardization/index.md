@@ -42,11 +42,10 @@ To evolve towards a federated data future, an extra "applied ontology" framework
 
 We begin with a short discussion of what applied ontologies are, how they differ from simpler kinds of standardised vocabulary, and why certain features of them are needed to achieve a federated data future.
 
-* Unique identifiers
-* Globally resolvable
+* Unique, globally resolvable identifiers to source ontology, definition, and synonymy.
+* Hierarchic terms
 * No term deletion, only deprecation and replacement
 * Multilingual
-* Hierarchic terms
 * Object properties (relations between objects)
  
 [NOTE: Check in with Laurette's contact at Amsterdam about his paradigm.]
