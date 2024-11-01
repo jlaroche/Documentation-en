@@ -23,7 +23,7 @@ Even if project datasets are registered in FAIR data catalogues (aka data search
 * Project data schemas are usually not available for perusal in data catalogues.   
 * On the search side, features for filtering datasets by dimensions of their experimental designs and protocols are often missing from a data catalogue.  It ends up being a manual task to locate datasets that have pertinent subject demographics, sample time, location, biological or social environment, or experimental protocols.
 
-### Layers of standardisation
+### Standardisation layers
 
 The vision of automating the **discovery, retrieval, and reuse** of datasets therefore requires well-coordinated technical language to describe research aims, and methods, and data objects, properties and relations (aka tables and fields) of project data.  As this information becomes standardised, so too will the data catalogue user interfaces for leveraging it.  Artificial Intelligence will likely be introduced to help pair users' natural language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various levels.
 
