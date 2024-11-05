@@ -55,7 +55,8 @@ Other generalist repositories include:
 5. [Borealis](https://borealisdata.ca/). A Canadian research data repository that offers long-term storage and sharing of research data across institutions.
 6. [FRDR (Federated Research Data Repository)](https://www.frdr-dfdr.ca/). A platform for discovering and sharing Canadian research data, aimed at supporting data management and preservation.
 
-
+**Repository software**
+1. [iRODS](https://irods.org/). The Rule-Oriented Data System (iRODS) is open source data management software used by research organizations and government agencies worldwide.  
 
 ## Helpful links
 * [Guide to Canadian Repositories](https://zenodo.org/records/3966349)
