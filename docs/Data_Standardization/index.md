@@ -7,15 +7,15 @@ nav_order: 6
 # Data Standardization
 ### Motivation
 
-While a project’s datasets may have been built and hosted to support the immediate needs of its research aims, extra attention is usually required to create standardised data products so they can be found and reused by other stakeholders (academic, government, industry, and other research agency staff) with minimal effort. Even if project datasets are registered in FAIR data catalogues (aka data search portals) discovery and reuse can be confounded by non-harmonized metadata and data, as well as limitations of the catalogues themselves, especially in the context of the flood of experimental and surveillance datasets being generated in many areas of research.
+While a project’s datasets may have been built and hosted to support the immediate needs of its research aims, extra attention is usually required to create standardised data products so they can be found and reused by other stakeholders (academic, government, industry, and other research agency staff) with minimal effort. Even if project datasets are registered in FAIR data catalogues (aka data search portals), discovery and reuse can be confounded by non-harmonized metadata and data, as well as limitations of the catalogues themselves, especially in the context of the flood of experimental and surveillance datasets being generated in many areas of research.
 
 Challenges faced by researchers and other data consumers:
-* **Data catalogues**: For discovery, work is required to submit project dataset metadata to data catalogues like [FAIRsharing.org](https://fairsharing.org/) or Google's [dataset search](https://datasetsearch.research.google.com/), but the target catalogues themselves often don't share the same general data description framework (such as Schema.org [Dataset](https://schema.org/Dataset) for describing data), or the same semantic content language.
+* **Data catalogues**: For discovery, work is required to submit project dataset metadata to data catalogues like [FAIRsharing.org](https://fairsharing.org/) or Google's [dataset search](https://datasetsearch.research.google.com/), but the target catalogues themselves often don't share the same general data description framework (such as Schema.org [Dataset](https://schema.org/Dataset)), or the same semantic content terms.
 * **Bag of keywords consistency**: In data catalogues, a semantic description of a dataset is often limited to a set of keywords - and these keywords are often user-supplied synonomy-rich free text and/or selected from a broad rather than comprehensive menu. Even where controlled vocabulary is used, changes in preferred labelling confound retrieval of past and present results (e.g. in taxonomy, "Malus pumila" vs. "Malus domestica" to reference apple tree).
-* **Search result precision and recall**: Searching for a few general dataset domain keywords in a data catalogue will increasingly yield too many results to humanly sift through (false positives, and not suitably ranked to facilitate a cutoff point).  Conversley, providing more keywords, and more specific ones, may winnow down candidate datasets too sharply, excluding good ones that simply used some different keyword synonyms (false negatives).  Use of keywords within or across data catalogues is often inconsistent and is still just a fraction of the terms needed to differentiate what datasets are about.
+* **Search result precision and recall**: Searching for a few general dataset domain keywords in a data catalogue will increasingly yield too many results to humanly sift through (false positives, and not suitably ranked to facilitate a cutoff point).  Conversley, providing more keywords, and more specific ones, may winnow down candidate datasets too sharply, excluding good ones that simply used some different keyword synonyms (false negatives).  Use of keywords within or across data catalogues is often inconsistent and is a fraction of the terms needed to differentiate what datasets are about.
 * **Dimensional filters**: Filters specific to experimental design and protocol, subject demographics, and biological or social context are often missing, leading to further investigation to see if specific data types are being collected, with comparable methods, and in a comparable context. Some efforts to provide standard fields that pertain to database scope exist (e.g. fields for [temporalCoverage](https://schema.org/temporalCoverage), [countryOfOrigin](https://schema.org/countryOfOrigin), and 
 [contentLocation](https://schema.org/contentLocation)).
-* **Data normalization**: Once a researcher has located fit-for-purpose databases for federation towards answering research questions, it has been estimated that 80% of their time is consumed in field-level preparatory harmonization of the data.  FAIR data proponents advocate for an initial 5% investment of project budget towards standardized data products to lessen this downstream burden. [FAIR DATA REF - Barens]
+* **Data normalization**: Once a researcher has located fit-for-purpose databases for federation towards answering research questions, it has been estimated that 80% of their analytic time is consumed in field-level preparatory harmonization of the data.  FAIR data proponents advocate for an initial 5% investment of project budget towards standardized data products to lessen this downstream burden. [FAIR DATA REF - Barens]
 
 ### Standardisation layers
 
@@ -29,8 +29,8 @@ The vision of automating the **discovery, retrieval, and reuse** of datasets the
     * The OBI ontology provides a sizeable list of [study design](http://purl.obolibrary.org/obo/OBI_0500000) terms which can be referenced from across life science research domains.
     * [Protocols.io](https://www.protocols.io/) is a popular system for detailing and publishing protocol information.
   * **Data schema**: Dataset table and field-level information can be extracted from [data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) for display in agency or public FAIR data catalogues.
-    * Establishing a data schema has the side benefit of facilitiating API development and/or exposing the structural information that enables users to query the dataset directly.
-    * The main challenge that remains to achieve **reuse** - inexpensive, efficient data harmonisation - is to standardise project datasets and their schemas down to the field name and picklist value level - or at least have standardized views of them so that idiosyncratic dataset table/object and field names and picklist values are recognized and harmonized with vocabulary commonly in use by other datasets.
+    * A side benefit of schemas is that they facilitiate API development and/or exposing the structural information that enables users to query datasets directly.
+    * The remaining work to achieve **reuse** - inexpensive, efficient data harmonisation - is to standardise project datasets and their schemas down to the field name and picklist value level - or at least have standardized views of them so that idiosyncratic dataset table/object and field names and picklist values are recognized and harmonized with vocabulary commonly in use by other datasets.
   * **Provenance**: Covers dataset hosting location, authorship, release dates, associated paper(s) and institutions, access criteria and proceedure. [PROVO](https://www.w3.org/TR/prov-overview/) is often used here.
   * **Governance**: The above points focus on standardising project data for **discovery**.  Additionally, standardization of the data governance aspect, including **data access and retrieval** processes like user authentication and permissioned access via content privacy rules, is evolving with the help of ontologies such as the Data Use Ontology [DUO](https://github.com/EBISPOT/DUO), and standardized authentication systems such as [OAuth 2.0](https://oauth.net/2/).
 
@@ -41,12 +41,14 @@ To evolve towards a federated data future, an extra "applied ontology" framework
 * Unique, globally resolvable identifiers to source ontology, definition, and synonymy.
 * Hierarchic terms
 * No term deletion, only deprecation and replacement
-* Multilingual
+* Ontology picklists are familiar to computer science developers as lookup tables
+* Multilingual (also by way of synonymy lookup tables)
 * Object properties (relations between objects)
  
 [NOTE: Check in with Laurette's contact at Amsterdam about his paradigm.]
 
 ### Training resources ###
+TBD
 
 ### Timing of standardisation work
 
