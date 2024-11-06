@@ -43,7 +43,17 @@ Covers dataset hosting location, authorship, release dates, associated paper(s) 
  * [PROVO](https://www.w3.org/TR/prov-overview/) is often used here.
 
 ### **Governance**
+
 The above points focus on standardising project data for **discovery**.  Additionally, standardization of the data governance aspect, including **data access and retrieval** processes like user authentication and permissioned access via content privacy rules, is evolving with the help of ontologies such as the Data Use Ontology [DUO](https://github.com/EBISPOT/DUO), and standardized authentication systems such as [OAuth 2.0](https://oauth.net/2/).
+
+## Implementation
+
+Its important to stress that researchers shouldn't have to take on the bulk of standardization work since it does involve a number technical skills and general awareness of controlled vocabularies and standardized data formats that take time to aquire.  Ideally agency data management/scientist/analyst staff are available to help with standardizing data schemas or exported data projects. 
+
+* Recommended naming conventions for data validation functions (&code generation).  This relates directly to the tools handling data and the possibility of reusing scripts without errors arising when using spaces, dashes etc in names.  Data schema frameworks like LinkML have been guided by [Python](https://peps.python.org/pep-0008/#naming-conventions) / [R and SQL compatible](https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/names.html) field names, and standardized table / object names.
+  * PascalCase for table, object and picklist names.
+  * lower_camel_case for record field names (object properties).
+* In the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section a list of recommended ontologies and ways of implementing them as a layer upon a data schema.
 
 ## Timing of standardisation work
 
