@@ -20,7 +20,7 @@ The vision of automating the **discovery, retrieval, and reuse** of datasets req
 ### **Dataset content summary**
 
  * Ontology-driven keyword systems are being increasingly adopted by data catalogues, for example, Fairsharing.org's liberal use of [EDAM](https://edamontology.org/page) and other [OBO Foundry](https://obofoundry.org/) ontologies for content description.
- * Potentially a dataset's record counts and serialization byte size information, tallies of demographic / contextual keywords, and perhaps spatiotemporal scope (a sample collection's collection time duration and location(s) for example) can be published.
+ * Potentially a dataset's record counts and serialization byte size information, tallies of demographic / contextual keywords, and perhaps spatiotemporal scope (a sample set's collection date and location(s) for example) can be published.
 
 ### **Experimental design and protocol metadata**
 
