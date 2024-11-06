@@ -4,6 +4,7 @@ title: Data Standardisation
 nav_order: 6
 ---
 
+# Data Standardization
 {: .no_toc }
 
 ## Table of Contents
@@ -11,8 +12,6 @@ nav_order: 6
 
 1. TOC
 {:toc}
-
-# Data Standardization
 
 The vision of automating the **discovery, retrieval, and reuse** of datasets therefore requires well-coordinated technical language to describe research aims and methods, and data objects, properties and relations (aka tables and fields) of project data.  As this information becomes standardised, so too will the data catalogue user interfaces for leveraging it.  Artificial Intelligence will likely be introduced to help pair users' plain language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various levels as shown below.  Examples are provided of associated tools and ontologies that improve standardized project and dataset information and downstream data catalogue capabilities:
 
