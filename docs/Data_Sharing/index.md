@@ -30,4 +30,4 @@ Satisfying FAIR data management principles for data sharing involves several adm
 * Utilizing FAIR data catalogues to enable researchers to become aware of project datasets in terms of available data types, fields, size of content, and even experimental designs that lead to the content. Providing this information usually benefits from dataset scheme and standardization work.
   * https://fairsharing.org/
  
-
+Author: Damion Dooley
