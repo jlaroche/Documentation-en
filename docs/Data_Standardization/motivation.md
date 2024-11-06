@@ -2,7 +2,7 @@
 layout: default
 title: Motivation for Data Standardisation
 parent: Data Standardisation
-nav_order: 3
+nav_order: 1
 ---
 
 # Motivation for Data Standardization
