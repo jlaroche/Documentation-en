@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Motivation for Data Standardisation
+title: Motivation
 parent: Data Standardisation
 nav_order: 1
 ---
