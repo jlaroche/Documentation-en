@@ -1,12 +1,19 @@
 ---
 layout: default
-title: Data Standardisation
-nav_order: 6
+title: Motivation for Data Standardisation
+parent: Data Standardisation
+nav_order: 3
 ---
 
-# Data Standardization
+# Motivation for Data Standardization
+{: .no_toc }
 
-### Motivation
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 
 While a project’s datasets may have been built and hosted to support the immediate needs of its research aims, extra attention is usually required to create standardised data products so they can be found and reused by other stakeholders (academic, government, industry, and other research agency staff) with minimal effort. Even if project datasets are registered in FAIR data catalogues (aka data search portals), discovery and reuse can be confounded by non-harmonized metadata and data, as well as limitations of the catalogues themselves, especially in the context of the flood of experimental and surveillance datasets being generated in many areas of research.
 
