@@ -6,7 +6,7 @@ nav_order: 8
 
 # Data Sharing
 
-Satisfying FAIR data management principles for data sharing involves several administrative and technical parts including hosting data, providing access permission, and enabling discovery of that data. This service needs to be maintained beyond the life of the project.
+Satisfying FAIR data management principles for data sharing involves several administrative and technical parts including hosting data, providing access permission, and enabling discovery of that data. These services need to be maintained beyond the life of the project.
 
 ### Administrative:
 
