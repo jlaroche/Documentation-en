@@ -28,13 +28,16 @@ This metadata enables researchers to judge pertinence of a dataset.
  * The OBI ontology provides a sizeable list of [study design](http://purl.obolibrary.org/obo/OBI_0500000) terms which can be referenced from across life science research domains.
  * [Protocols.io](https://www.protocols.io/) is a popular system for detailing and publishing protocol information.
 
-### **Data schema**: Dataset table and field-level information can be extracted from [data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) for display in agency or public FAIR data catalogues.
+### **Data schema**
+Dataset table and field-level information can be extracted from [data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) for display in agency or public FAIR data catalogues.
   * A side benefit of schemas is that they facilitiate API development and/or exposing the structural information that enables users to query datasets directly.
   * The remaining work to achieve **reuse** - inexpensive, efficient data harmonisation - is to standardise project datasets and their schemas down to the field name and picklist value level - or at least have standardized views of them so that idiosyncratic dataset table/object and field names and picklist values are recognized and harmonized with vocabulary commonly in use by other datasets.
 
-### **Provenance**: Covers dataset hosting location, authorship, release dates, associated paper(s) and institutions, access criteria and proceedure. [PROVO](https://www.w3.org/TR/prov-overview/) is often used here.
+### **Provenance**
+Covers dataset hosting location, authorship, release dates, associated paper(s) and institutions, access criteria and proceedure. [PROVO](https://www.w3.org/TR/prov-overview/) is often used here.
 
-### **Governance**: The above points focus on standardising project data for **discovery**.  Additionally, standardization of the data governance aspect, including **data access and retrieval** processes like user authentication and permissioned access via content privacy rules, is evolving with the help of ontologies such as the Data Use Ontology [DUO](https://github.com/EBISPOT/DUO), and standardized authentication systems such as [OAuth 2.0](https://oauth.net/2/).
+### **Governance**
+The above points focus on standardising project data for **discovery**.  Additionally, standardization of the data governance aspect, including **data access and retrieval** processes like user authentication and permissioned access via content privacy rules, is evolving with the help of ontologies such as the Data Use Ontology [DUO](https://github.com/EBISPOT/DUO), and standardized authentication systems such as [OAuth 2.0](https://oauth.net/2/).
 
 ## Timing of standardisation work
 
