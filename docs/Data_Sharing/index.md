@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Data Sharing
+title: Data Sharing and Governance
 nav_order: 8
 ---
 
-# Data Sharing
+# Data Sharing and Governance
 
 Satisfying FAIR data management principles for data sharing involves several administrative and technical parts including hosting data, providing access permission, and enabling discovery of that data. These services need to be maintained beyond the life of the project.
 
-### Administrative:
+_**Indigenous data has special governance concerns: For more information, see [OCAP & CARE](https://climatesmartagcollab.github.io/Documentation-en/ocapcare.html)**_.
+
+### Governance:
 
 * Identifying a person or team responsible for managing project shared data specifications, storage and access.
   * This includes the responsibility of determining what shared data is as a subset of raw or analyzed project data.
