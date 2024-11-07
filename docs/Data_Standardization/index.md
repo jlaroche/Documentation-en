@@ -13,7 +13,7 @@ nav_order: 6
 1. TOC
 {:toc}
 
-The vision of automating the **discovery, retrieval, and reuse** of datasets requires well-coordinated technical language to describe research aims and methods, and dataset tables and fields (or objects, properties and relations) of project data.  As this information becomes standardised, so too will the data catalogue user interfaces for leveraging it.  Artificial Intelligence will likely be introduced to help pair users' plain language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various layers as shown below.  Examples are provided of associated tools and ontologies that improve standardized project and dataset information and downstream data catalogue capabilities.
+The vision of FAIR **discovery and reuse** of datasets has a number of [motivations and challenges](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/motivation.md). A key requirement for success is a well-coordinated technical language to describe research aims and methods, and dataset tables and fields (or objects, properties and relations) of project data.  As this metadata becomes standardised, data catalogues can leverage it in their search interfaces.  Artificial Intelligence will likely be introduced to help pair users' plain language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various layers as shown below.  Examples are provided of associated tools and ontologies that improve standardized project and dataset information and downstream data catalogue capabilities.
 
 ## Standardisation layers
 
@@ -24,7 +24,7 @@ The vision of automating the **discovery, retrieval, and reuse** of datasets req
 
 ### **Experimental design and protocol metadata**
 
-This metadata enables researchers to judge pertinence of a dataset.
+This metadata enables researchers to judge pertinence of a dataset arising from samples or observations where the data itself doesn't clearly define the experimental groups or context of collection, or sensitive methodology involved.
 
  * For example, the [Experimental Design Assistant](https://nc3rs.org.uk/our-portfolio/experimental-design-assistant-eda) generates visual diagrams of multi-group and experimental variable studies in animal research for easy comparison.
  * The OBI ontology provides a sizeable list of [study design](http://purl.obolibrary.org/obo/OBI_0500000) terms which can be referenced from across life science research domains.
@@ -35,7 +35,7 @@ This metadata enables researchers to judge pertinence of a dataset.
 Dataset table and field-level information can be extracted from [data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) for display in agency or public FAIR data catalogues.
 
  * **API**: A side benefit of schemas is that they facilitiate application interface (API) development and/or expose the structural information that enables users to query datasets directly.
- * **Ontology**: The remaining work to achieve **reuse** - inexpensive, efficient data harmonisation - is to standardise project datasets and their schemas down to the field name and picklist value level - or at least have standardized views of them so that idiosyncratic dataset table/object and field names and picklist values are recognized and harmonized with vocabulary commonly in use by other datasets.
+ * **Ontology**: The remaining work to achieve discovery and reuse - inexpensive, efficient data harmonisation - is to standardise project datasets and their schemas down to the field name and picklist value level - or at least have standardized views of them so that idiosyncratic dataset table/object and field names and picklist values are recognized and harmonized with vocabulary commonly in use by other datasets.
 
 ### **Provenance**
 Covers dataset hosting location, authorship, release dates, associated paper(s) and institutions, access criteria and proceedure.
