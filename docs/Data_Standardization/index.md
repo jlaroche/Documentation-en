@@ -48,8 +48,13 @@ The above points focus on standardising project data for **discovery**.  Additio
 
 ## Implementation
 
-Its important to stress that researchers shouldn't have to take on the bulk of standardization work since it does involve a number technical skills and general awareness of controlled vocabularies and standardized data formats that take time to aquire.  Ideally agency data management/scientist/analyst staff are available to help with standardizing data schemas or exported data projects. 
+Its important to stress that researchers shouldn't have to take on the bulk of standardization work since it does involve a number technical skills and general awareness of controlled vocabularies and standardized data formats that take time to aquire.  Ideally agency data management/science/analyst staff are available to help with standardizing data schemas or exported data projects. 
 
+Project data schema(s) is/are a prerequisite for creating standardised data products. 
+* **standardized data components**: If anticipated early in the project design cycle, standardised data components may be incorporated directly into a project’s primary data schema itself.
+  
+* **data schema mapping**: Often however, whether because of project momentum or a commitment to existing information technology infrastructure, a data schema is non-standardised, and so data products require a mapping process to transform existing project data into standardised format for external use. This mapping process is performed either by specialised conversion scripts that often have to be tweaked over time, or ideally by using data schemas established (e.g. by [storage repositories](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/storage/index.md)) for the target standardised data products, combined with a more generic programmatic template to do the conversion from one schema to another. One can also expect iteration of specification work as data schemas evolve for surveillance or longitudinal research.
+  
 * **Data naming convention**: Regardless of whether a data schema is reusing elements from other schemas, it is very beneficial to impose data naming conventions on its home-grown components.  This is done mainly to avoid issues in applying or developing software scripts for validation, transformation, and/or database interaction.
   * **Coding name**: Have a "coding name" for a field or variable name that is safe for use in most programming languages and analytic tools.  This avoids problems where some programs or databases can't handle spaces, dashes, slashes or dots etc. in a name.  Data schema frameworks like LinkML have been guided by [Python](https://peps.python.org/pep-0008/#naming-conventions) / [R and SQL compatible](https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/names.html) field names, and standardized table / object names.
      * **PascalCase** for table, object and picklist names.
@@ -58,11 +63,6 @@ Its important to stress that researchers shouldn't have to take on the bulk of s
   
 * **Ontologies**: In the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section there is a list of recommended ontologies and ways of implementing them as a layer upon a data schema.
   * For every coding name there can be a comparable ontology identifier that points to online information about the semantics that facilitates automated machine comparison of the data item.
-
-  
-## Timing of standardisation work
-
-Project data schema(s) is/are a prerequisite for creating standardised data products. If anticipated early in the project design cycle, standardised data components may be incorporated directly into a project’s primary data schema itself. Often however, whether because of project momentum or a commitment to existing information technology infrastructure, a data schema is non-standardised, and so data products require a mapping process to transform existing project data into standardised format for external use. This mapping process is performed either by specialised conversion scripts that often have to be tweaked over time, or ideally by using data schemas established (e.g. by [storage repositories](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/storage/index.md)) for the target standardised data products, combined with a more generic programmatic template to do the conversion from one schema to another. One can also expect iteration of specification work as data schemas evolve for surveillance or longitudinal research.
 
 ## Training resources ###
 TBD
