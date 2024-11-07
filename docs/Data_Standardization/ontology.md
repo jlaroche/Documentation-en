@@ -26,6 +26,9 @@ Looking up "ontology" in Wikipedia ... Applied ontology instead focuses on ...
 * Ontology picklists are familiar to computer science developers as lookup tables
 * Multilingual (also by way of synonymy lookup tables)
 * Object properties (relations between objects)
+* Machine readable
+
+* Phenopacket output products
  
 [NOTE: Check in with Laurette's contact at Amsterdam about his data vs function paradigm.]
 
