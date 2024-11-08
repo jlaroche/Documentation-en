@@ -14,7 +14,7 @@ Another key benefit of documenting data is preserving it for long-term use. As t
 
 Some Considerations for Documenting Data
 
-* **Vocabularies and Ontologies**: Use controlled vocabularies and standardized ontologies (e.g., GO for gene products, MIAME for microarrays) to ensure consistency and compatibility across research projects.
+* **Vocabularies and Ontologies**: Use structured vocabularies and standardized ontologies (e.g., GO for gene products, MIAME for microarrays) to ensure consistency and compatibility across research projects.
 * **Data Schemas**: Define a clear structure or schema for your data, outlining how the data is organized and how the fields relate to each other.
 * **Metadata**: Include detailed metadata to describe the context, content, and structure of the data (e.g., date of collection, methods used, units of measurement).
 * **Data Filenames**: Use consistent and descriptive filenames that indicate the contents, version, and date, helping users quickly understand what the file contains.
