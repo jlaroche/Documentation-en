@@ -59,7 +59,7 @@ Its important to stress that researchers shouldn't have to take on the bulk of s
   
 * **Standardised data components**:
   * **Field level**: If anticipated early in the project design cycle, data fields can be standardized, that is, can have specific content syntax or picklist items defined, for example the [ISO 19115-1:2014
-Geographic information — Metadata](https://www.iso.org/standard/53798.html) and Cell Ontology [cell type]([https://obofoundry.org/ontology/cl.html](http://purl.obolibrary.org/obo/CL_0000000))) expressions and references may be incorporated directly into a project's field specifications.
+Geographic information — Metadata](https://www.iso.org/standard/53798.html) and Cell Ontology [cell type](http://purl.obolibrary.org/obo/CL_0000000) expressions and references may be incorporated directly into a project's field specifications.
   * **Record level**: Usually producing standardised data products such as [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/) records is accomplished by mapping selected fields of target specifications into a project's [**data schema**](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) fields.
 
 
