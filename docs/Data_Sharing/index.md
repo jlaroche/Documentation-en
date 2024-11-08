@@ -8,7 +8,8 @@ nav_order: 8
 
 Satisfying FAIR data management principles for data sharing involves several administrative and technical parts including hosting data, providing access permission, and enabling discovery of that data. These services need to be maintained beyond the life of the project.
 
-_**Indigenous data has special governance concerns: For more information, see [OCAP & CARE](https://climatesmartagcollab.github.io/Documentation-en/ocapcare.html)**_.
+{: .highlight }
+Indigenous data has special governance concerns: For more information, see [OCAP & CARE](https://climatesmartagcollab.github.io/Documentation-en/ocapcare.html).
 
 ### Governance:
 

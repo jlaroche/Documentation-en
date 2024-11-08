@@ -10,14 +10,8 @@ nav_order: 5
 
 Active data is that which is under current collection and analysis.
 
-Recommended is the 3-2-1 rule: Save three copies of your data, on two different storage mediums, and one copy off site.
+It is recommended that when saving your active research data you use the 3-2-1 rule: Save three copies of your data, on two different storage mediums, and one copy off site.
 
-
-### Project file organization
-
-Consider specifying file organization (in addition to file naming) conventions. The [TIER protocol](https://www.projecttier.org/tier-protocol/protocol-4-0/) may be a resource to consider for setting up project file structures.
-
-Documentation that meets the specifications of the TIER Protocol contains all the data, scripts, and supporting information necessary to enable you, your instructor, or an interested third party to reproduce all the computations necessary to generate the results you present in the report you write about your project.
 
 ## Archive Data Storage
 

@@ -54,4 +54,10 @@ Store your schema multiple ways.
 
 Store the machine-readable schema bundle version and the .txt human-readable version together for best usability.
 
+### Contributing to the schema library
+
+The Data Hub project of Genome Canada is creating a [schema library](https://climatesmartagcollab.github.io/HUB-Harmonization/) as part of its mandate to help with data harmonization and the creation of data standards across project members.
+
+After creating your data schema using the Semantic Engine you can upload your machine-readable schema bundle and generate the markdown readme. Select the Data Hub scenario to add your ICT team name, schema author and email address so that your schema is sorted correctly in the library and so that other Data Hub members can see what data you are producing. 
+
 - written by Carly Huitema
