@@ -42,11 +42,13 @@ Geographic information — Metadata](https://www.iso.org/standard/53798.html) fo
   
 * **Permanent identifiers**: Given the need to reference vocabulary and other data resources on the web, standardization work often involves a kind of value called a **permanent identifier** reference that points to a resource like a dataset, document, or vocabulary term detail page.  For a web reference this is called a **permanent URL or "purl"**, such as [http://purl.obolibrary.org/obo/OBI_0001167](http://purl.obolibrary.org/obo/OBI_0001167).  Once a purl goes into circulation on the web, it is expected to remain there so it can always retrieve the resource, or, if what it points to becomes archaic or discontinued, a "deprecated" code response. Additionally, if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying.
 
-* **Structured vocabulary**: We use the term "structured vocabulary" to describe a file of vocabulary terms such as a taxonomy or ontology that includes attribute details to some extent - such as plain english or other language names, coding names, purls, definitions, and attribute semantics such as hierarchies of terms.  There are many places to find structured vocabularies as a whole, or by term, including:
+* **Structured vocabulary**: We use the term "structured vocabulary" to describe a file of vocabulary terms such as a taxonomy or ontology that includes attribute details to some extent - such as plain english or other language names, coding names, purls, definitions, and attribute semantics such as hierarchies of terms.  There are many structured vocabulary catalogues as lists or searchable portals, including:
 
-* CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
-* [AgroPortal](https://agroportal.lirmm.fr/) is another source of agriculture research vocabulary.
-* [OBO Foundry](https://obofoundry.org/) is a collaborative effort of life science ontologies related to agriculture, biology, climate, and ecology research, all operating within an aligned curational methodology.
+  * The international CGIAR agricultural research agency has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
+  * [AgroPortal](https://agroportal.lirmm.fr/) supported by a number of leading French research agencies is another source of agriculture research vocabulary.
+  * [OBO Foundry](https://obofoundry.org/) is a multi-agency collaborative effort of life science ontologies related to agriculture, biology, climate, and ecology research, all operating within an aligned curational methodology.
+  * [OLS](https://www.ebi.ac.uk/ols4) The European Molecular Biology Laboratory (EMBL) European Bioinformatics Institute ontology search interface reflects the agencies commitment to developing ontologies in the life science area.
+  * [Fairsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard) has a standards registry dedicated to workflow and ontology resources.
 
 More details on applying suitable ontologies to dataset standardization is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
 
