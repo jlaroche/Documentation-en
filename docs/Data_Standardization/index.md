@@ -15,9 +15,16 @@ nav_order: 6
 
 The vision of FAIR **discovery and reuse** of datasets has a number of [motivations and challenges](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/motivation.md). Ultimately, a key requirement for success is a **well-coordinated technical language to describe project research aims and methods, and dataset tables and fields**.  As this metadata becomes standardised, data catalogues can leverage it in their search interfaces.  Artificial Intelligence will likely be introduced to help pair users' plain language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various layers as shown below.  Examples are provided of associated tools and ontologies that improve standardized project and dataset information and downstream data catalogue capabilities.
 
-First, a few notes on language involved in describing data standards at various layers (with more to follow in the ontology section): 
+First, a few notes on language involved in describing data standards at various layers (and more to follow in the ontology section): 
+
 * A variable, form field, record field, table row field, spreadsheet cell, or computational object attribute can hold a **value** (aka data item or datum).
-* A "tabular data" spreadsheet or table column can hold fields (attributes) of a certain fundamental "literal" **datatype**, like a string, date, time, integer or decimal number, boolean, categorical value or URL reference type.
+* A value can be of a certain fundamental "literal" **datatype**, like a string, date, time, integer or decimal number, boolean, categorical value or URL reference type.  A few common standards exist for these: [XML](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes), [JSON](https://json-schema.org/understanding-json-schema/reference/type) and [SQL](https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/).
+* Values themselves appear in user interfaces and files as strings characters from an international character set including accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard includes character encodings that cover most international languages and dingbats to boot!  Sadly software often has to guess what encoding a file has, and some programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
+
+* 
+* A "tabular data" spreadsheet or table column can hold fields (attributes) of a
+
+* 
 * A kind of table record, computation object, spreadsheet, ontological entity, or user interface form may have some number of required and/or optional **fields**, aka **attributes or properties**.
 * Another key concept is the use of **permanent identifiers** for specifying location or metadata descriptions of data at the collection or record/object level, or for identifiers that can be looked up to yeild semantic information such as definitions and mappings to other terms.  Once a permanent identifier goes into circulation on the web, it is expected to remain.  If it points to an archaic or deprecated term or other information (due to discontinued vocabulary or resources) then ideally if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying. 
 
