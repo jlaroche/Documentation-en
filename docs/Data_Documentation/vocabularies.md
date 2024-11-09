@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Vocabularies
+title: Vocabularies - MOVED
 parent: Data Documentation
 nav_order: 4
 ---
 
-# Using Structured Vocabularies
+# Using Structured Vocabularies - MOVED
 {: .no_toc }
 
 ## Table of Contents
