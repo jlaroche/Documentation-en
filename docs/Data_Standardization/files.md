@@ -1,11 +1,11 @@
 ---
 layout: default
-title: File and Folder Standards
+title: File, Folder and Workflow Standards
 parent: Data Standardisation
 nav_order: 7
 ---
 
-# File and Folder Standards
+# File, Folder and Workflow Standards
 {: .no_toc }
 
 ## Table of Contents
