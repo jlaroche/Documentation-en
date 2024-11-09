@@ -83,8 +83,7 @@ The above points focus on standardising project data for discovery.  Additionall
 
 ### Files, folders, and workflow
 
-A project is composed of many workflow-generated files and folders which need to be systematically organized, as covered [here]([Documentation-en/docs/Data_Standardization
-/files.md](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/files.md))
+A project is composed of many workflow-generated files and folders which need to be systematically organized, as covered [here](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/files.md)
 
 ## Implementation
 
