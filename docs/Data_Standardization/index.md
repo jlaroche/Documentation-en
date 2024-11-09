@@ -15,41 +15,56 @@ nav_order: 6
 
 The vision of FAIR **discovery and reuse** of datasets has a number of [motivations and challenges](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/motivation.md). Ultimately, a key requirement for success is a **well-coordinated technical language to describe project research aims and methods, and dataset tables and fields**.  As this metadata becomes standardised, data catalogues can leverage it in their search interfaces.  Artificial Intelligence will likely be introduced to help pair users' plain language descriptions of sought-after data types and context to the catalogue's holdings, but either way, the discovery and reuse vision requires project data managers to provide sufficient information at various layers as shown below.  Examples are provided of associated tools and ontologies that improve standardized project and dataset information and downstream data catalogue capabilities.
 
-First, a few notes on language involved in describing data standards at various layers (and more to follow in the ontology section): 
+We discuss application of ontology to data schemas below, but first, a few notes and recommendations on the mixture of language currently present in describing data standard content at various layers and in various software applications and storage technologies:
 
-* A variable, form field, record field, table row field, spreadsheet cell, or computational object attribute can hold a **value** (aka data item or datum).
-* A value can be of a certain fundamental "literal" **datatype**, like a string, date, time, integer or decimal number, boolean, categorical value or URL reference type.  A few common standards exist for these: [XML](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes), [JSON](https://json-schema.org/understanding-json-schema/reference/type) and [SQL](https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/).
-* Values themselves appear in user interfaces and files as strings characters from an international character set including accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard includes character encodings that cover most international languages and dingbats to boot!  Sadly software often has to guess what encoding a file has, and some programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
+* **Values**: A form field, record field, table row field, spreadsheet cell, computational object/class attribute or property or slot, or variable can hold a **value** (aka data item or datum).
 
-* 
-* A "tabular data" spreadsheet or table column can hold fields (attributes) of a
+* **Fundamental datatypes**: Crucial to machine readability, a value can be of a certain fundamental "literal" or syntactic **datatype**, like a string, date, time, integer or decimal number, boolean, categorical value or URL reference type.  A few common standard "data-interchange languages" exist that express these: [XML](https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes), [JSON](https://json-schema.org/understanding-json-schema/reference/type) and [SQL](https://www.digitalocean.com/community/tutorials/sql-data-types). (There one can see translation issues where one standard allows a less atomic "number" datatype while another only has "decimal" or "integer" - so a conversion from a schema using one datatype standard to another schema with a different data type requires "sniffing" or parsing what kind of number the former contains.)
+  * A data schema can also provide more complex string data type extensions by imposing further constraints on their syntax (often by use of [regular expressions](https://en.wikipedia.org/wiki/Regular_expression)), in order to express for example the [ISO 19115-1:2014
+Geographic information — Metadata](https://www.iso.org/standard/53798.html) for latitude and longitude coordinates.
 
-* 
-* A kind of table record, computation object, spreadsheet, ontological entity, or user interface form may have some number of required and/or optional **fields**, aka **attributes or properties**.
-* Another key concept is the use of **permanent identifiers** for specifying location or metadata descriptions of data at the collection or record/object level, or for identifiers that can be looked up to yeild semantic information such as definitions and mappings to other terms.  Once a permanent identifier goes into circulation on the web, it is expected to remain.  If it points to an archaic or deprecated term or other information (due to discontinued vocabulary or resources) then ideally if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying. 
+* **Character sets**: Data "serialized" into a text file will be encoded as strings characters from a character set which may include accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard (used to encode most web pages) includes character encodings that cover many languages and [dingbats](https://en.wikipedia.org/wiki/Dingbat) to boot!  Sadly software often has to guess what encoding an input file has, and some versions of programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
+
+* **Attributes**: A kind of table record, spreadsheet, computational object or class, ontological entity, or user interface form may have some number of required and/or optional **attributes**, aka **fields, properties, variables, or slots**, which hold kinds of value.
+  * **Attribute naming**: It is important to distinguish the two kinds of name an attribute can have:
+    * **Plain name**: A default plain language user interface **label or title** (including spreadsheet column labels) for human readability, such as "Birth Date", "Birthday", "date of birth", "born", "created", etc. Enabling the title or label to have language variants also paves the way for multilingual interfaces. Because an attribute's desired label may vary between user communities and applications, expect this label to be changed in particular applications. In software it should not be used as the key for looking up attribute information.
+    * **Coding name**: A computer software/script/analytic/database/serialization-level attribute "coding" name, such as "birth_date".  This name is the key to machine readability, and its standard format should align with popular programming variable naming conventions to avoid errors in parsing data files and to enable code generation (e.g. alphanumeric + underscore only; no spaces, dashes, slashes, brackets, parentheses or dots etc. allowed in a name).  Data schema frameworks like LinkML have been guided by [Python](https://peps.python.org/pep-0008/#naming-conventions) / [R and SQL compatible](https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/names.html) field names, and standardized table / object names, in particular:
+     * **PascalCase** for table, object and picklist names.
+     * **lower_camel_case** for record field names (object properties).
+
+  * **Categorical attributes**: Some attributes take on a set of permissable values ...
+  
+* **Permanent identifiers**: Standardization work often involves a kind of value called a **permanent identifier** reference that points to a resource like a dataset, document, or vocabulary term detail page.  For a web reference this is called a permanent URL or "purl".  Once a purl goes into circulation on the web, it is expected to remain there so it can always retrieve the resource, or, if what it points to becomes archaic or discontinued, a "deprecated" code response. Additionally, if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying.
+
+* **Structured vocabulary**: ...
+
+* There are many places to find structured vocabularies such as ontologies and taxonomies as a source for terms.
+
+- The organization CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
+- [AgroPortal](https://agroportal.lirmm.fr/) is another source of agriculture research vocabulary.
+- The above resources relay a number of [OBO Foundry](https://obofoundry.org/) life science ontologies related to agriculture, biology, climate, and ecology research, as detailed in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) documentation section.
+  
 
 ## Standardisation layers
 
 ### Data schema and dataset content summary
 
-Harmonized data schemas contribute both to peer-to-peer data sharing as well as data catalogue visibility.
+Harmonized [Data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) contribute both to peer-to-peer data sharing as well as data catalogue visibility.  This involves standardising project datasets / schemas down to the field name and picklist value level - or at least map them to their semantic equivalents.  Idiosyncratic names are replaced in favour of terms referenced in standards.
 
-* [Data schema](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) derived information, including lists of standards and structured vocabularies in use, can be referenced in agency or public FAIR data catalogues.
-Harmonized dataset table and field-level information (e.g. counts of plant_growth_medium kinds) can be extracted from 
-* Subject area keywords can be standardized via ontology-driven (as opposed to free-text) keyword menus; These are being increasingly adopted by data catalogues, for example, [Fairsharing.org's](https://fairsharing.org/) liberal use of EDAM ontology [topics]([https://edamontology.org/page](https://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=topic_0003) and other [OBO Foundry](https://obofoundry.org/) ontologies for content description.
- * Potentially a dataset's record counts and serialization byte size information, lists and frequencies of demographic / contextual keywords, and perhaps spatiotemporal scope (e.g. a sample set's collection date and location(s)) can be published.
- * 
-The remaining work to achieve efficient discovery and reuse is to standardise project datasets / schemas down to the field name and picklist value level - or at least map them to their semantic equivalents.  Idiosyncratic names are replaced in favour of terms referenced in standards.
+* Human curated summary (metadata) information:
+  * Dataset subject area keywords can be standardized via ontology-driven (as opposed to free-text) keyword menus; These are being increasingly adopted by data catalogues, for example, [Fairsharing.org's](https://fairsharing.org/) liberal use of EDAM ontology [topics]([https://edamontology.org/page](https://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=topic_0003) and other [OBO Foundry](https://obofoundry.org/) ontologies for content description.
+  * Spatiotemporal scope (e.g. a sample set's collection date and location(s)) can be described using structured vocabularies like Wikidata's geographical knowledge base, e.g. [Canada](https://www.wikidata.org/wiki/Q16).
+* Data schema derived information, including lists of standards and structured vocabularies in use, can be referenced in agency or public FAIR data catalogues.  
+* Dataset derived information, including record counts and serialization byte size information, frequencies of demographic / contextual keyword use, harmonized dataset table and field-level information (e.g. counts of plant_growth_medium kinds occuring ) can be published.
 
 ### Experimental design and protocol metadata
 
 Going beyond subject areas, this metadata enables researchers to judge pertinence of a dataset arising from samples or observations where the data itself doesn't clearly define the experimental groups or context of collection, or sensitive methodology involved.
 
  * For example, the [Experimental Design Assistant](https://nc3rs.org.uk/our-portfolio/experimental-design-assistant-eda) generates visual diagrams of multi-group and experimental variable studies in animal research for speedier detailed comparison.
- * More generally, the OBI ontology provides a sizeable list of [study design](http://purl.obolibrary.org/obo/OBI_0500000) terms which can be referenced from across life science research domains.
+ * More generally, the [OBI](http://purl.obolibrary.org/obo/OBI_0500000) ontology and [NCIT Thesaurus](http://purl.obolibrary.org/obo/NCIT_C15320) provide a sizeable list of study design terms which can be referenced from across life science research domains.
  * [Protocols.io](https://www.protocols.io/) is a popular system for detailing and publishing protocol information.
 
-https://www.ebi.ac.uk/ols4/ontologies/ncit
 
 ### Provenance
 The story of where datasets are hosted and the projects, people and agencies responsible for their creation and management.  Common language covers:
@@ -77,15 +92,7 @@ Geographic information — Metadata](https://www.iso.org/standard/53798.html) an
 
 * **data schema mapping**: Often however, whether because of project momentum or a commitment to existing information technology infrastructure, a data schema is non-standardised, and so data products require a mapping process to transform existing project data into standardised format for external use. This mapping process is performed either by specialised conversion scripts that often have to be tweaked over time, or ideally by using data schemas established (e.g. by [storage repositories](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/storage/index.md) that store specific formats of data) for the target standardised data products, combined with a more generic programmatic template to do the conversion from one schema to another. One can also expect iteration of specification work as data schemas evolve for surveillance or longitudinal research.
   
-* **Data naming convention**: Regardless of whether a data schema is reusing elements from other schemas, it is very beneficial to impose data naming conventions on its home-grown components.  This is done mainly to avoid issues in applying or developing software scripts for validation, transformation, and/or database interaction.  Data "names" are often rather ambiguous - do we mean column display name, 3rd party standardized field name, or programmatic name for use in scripts or databases?  Distinctions need to be made about a data item name for display purposes, standardization name, or database and programming reference. Ensure that a separation of concern is established in the schema between the title or label that a field or variable might have in some context, and its coding name. 
-
- * **Plain name**: Names used by people in user interfaces including spreadsheet column labels: Enabling the title or label to have language variants also paves the way for other multilingual interfaces.
-* **Attribute name**: Names used by computers, scripts, statistical analysis software; often called a variable or property or coding name: For FAIR data machine readability - for names that don't cause problems when handled by software - we need a standardized format
-* **D
-  * **Coding name**: Have a "coding name" for a field or variable name that is safe for use in most programming languages and analytic tools.  This avoids problems where some programs or databases can't handle spaces, dashes, slashes or dots etc. in a name.  Data schema frameworks like LinkML have been guided by [Python](https://peps.python.org/pep-0008/#naming-conventions) / [R and SQL compatible](https://bookdown.org/content/d1e53ac9-28ce-472f-bc2c-f499f18264a3/names.html) field names, and standardized table / object names.
-     * **PascalCase** for table, object and picklist names.
-     * **lower_camel_case** for record field names (object properties).
- 
+* **Data naming convention**: Regardless of whether a data schema is reusing elements from other schemas, it is important to impose data naming conventions on its home-grown components.  This is done mainly to avoid issues in applying or developing software scripts for validation, transformation, and/or database interaction.  Data "names" are often rather ambiguous - do we mean column display name, 3rd party standardized field name, or programmatic name for use in scripts or databases?  Distinctions need to be made about a data item name for display purposes, standardization name, or database and programming reference. Ensure that a separation of concern is established in the schema between the title or label that a field or variable might have in some context, and its coding name. 
   
 * **Ontologies**: In the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section there is a list of recommended ontologies and ways of implementing them as a layer upon a data schema.
   * For every coding name there can be a comparable ontology identifier that points to online information about the semantics that facilitates automated machine comparison of the data item.
