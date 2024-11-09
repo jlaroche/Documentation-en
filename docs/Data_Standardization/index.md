@@ -81,10 +81,10 @@ The story of where datasets are hosted and the projects, people and agencies res
 
 The above points focus on standardising project data for discovery.  Additionally, standardization of the [data governance](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Sharing/index.md#administrative) aspect, including **data access criteria and retrieval** processes like user authentication and permissioned access via content privacy rules, is evolving with the help of ontologies such as the Data Use Ontology [DUO](https://github.com/EBISPOT/DUO), and standardized authentication systems such as [OAuth 2.0](https://oauth.net/2/).
 
-## Files and folders
+### Files, folders, and workflow
 
-A project is composed of many files and folders which need to be systematically organized, as covered [here](Documentation-en/docs/Data_Standardization
-/files.md)
+A project is composed of many workflow-generated files and folders which need to be systematically organized, as covered [here]([Documentation-en/docs/Data_Standardization
+/files.md](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/files.md))
 
 ## Implementation
 
