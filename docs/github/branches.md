@@ -90,7 +90,9 @@ Merge conflicts happen when you try to merge branches that have competing commit
 
 ## Forking
 
-What happens if are contributing to a standard/documentation repository but you don't have permissions to work in that repository? What you do is create a fork of the repository and keep it in your personal repository (or an organization you are a member of). Then you make changes there and you can make Pull Requests from your repository to the source (aka upstream) repository. Read the details on the [GitHub documentation site](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
+What happens if are contributing to a standard/documentation repository but you don't have permissions to work in that repository? This is a very typical model for working on collaborative projects using GitHub. 
+
+To collaborate on projects you create a fork of the repository and keep it in your personal repository (or an organization you are a member of). Then you make changes there and you can make Pull Requests from your repository to the source (aka upstream) repository. Read the details on the [GitHub documentation site](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
 
 ## Summary
 
