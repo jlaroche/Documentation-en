@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Data Schema Standardisation
+parent: Data Standardization
 nav_order: 2
 ---
 
@@ -14,7 +15,7 @@ nav_order: 2
 {:toc}
 
 ## Standardizing a data schema
-Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities. We cover standardized ways of expressing attributes and their values, 
+Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities.  First we work through a description and recommendations on the mixture of language currently present in describing data standard content at various layers and in various software applications and storage technologies, and then discuss how ontologies can be layered on to help determine semantic comparability.
 
 * **Values**: A form field, record field, table row field, spreadsheet cell, computational object/class attribute or property or slot, or variable can hold a **value** (aka data item or datum).
 
@@ -53,7 +54,7 @@ Encountering a value that has a syntactic structure beyond random characters sug
 * **Permanent identifiers**: Given the need to reference vocabulary and other data resources on the web, standardization work often involves a kind of value called a **permanent identifier** reference that points to a resource like a dataset, document, or vocabulary term detail page.  For a web reference this is called a **permanent URL or "purl"**, such as [http://purl.obolibrary.org/obo/OBI_0001167](http://purl.obolibrary.org/obo/OBI_0001167).  Once a purl goes into circulation on the web, it is expected to remain there so it can always retrieve the resource, or, if what it points to becomes archaic or discontinued, a "deprecated" code response. Additionally, if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying.
   There are registries of purl-endowed resources which include databases and ontologies, such as the W3C Permanent Identifier Community Group's [purl registry](https://w3id.org/), and [bioregistry.io](https://bioregistry.io/) which has more of a life science research focus and is an excellent place for projects to add their own resource links (when a vocabularies referenced in a database is not yet represented on the web).
   
-## Structured vocabulary**
+## Structured vocabulary
 We use the term "structured vocabulary" (also known as controlled vocabulary) to describe a file of vocabulary terms (such as a taxonomy or ontology) that includes attribute details to some extent - such as plain english or other language names, coding names, definitions, and semantics such as hierarchies of terms.  Agencies can build up a roster of recommended structured vocabularies for use in their project and infrastructure data schemas.  We are especially interested in structured vocabularies which have a purl for each term, available 24/7, that can be found in searchable portals.  Leading examples of vocabulary search portals including:
 
   * The international CGIAR agricultural research agency has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
