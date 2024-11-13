@@ -45,17 +45,17 @@ A hierarchical organization of terms also enables using branches of an ontology 
 ### Relations between entity kinds
 Naturally an ontology needs a language of relations between classes (called "object properties") such as "located in" or "part of" and a way to use them in expressing logical statements, called axioms, that must be true for an entity to match to some given class. There is also some functionality (using "data properties") for associating specific values or ranges to class axioms (e.g. "pi 'has value' "3.1415927"^^xsd:decimal).
 
-### Free-text definition
-A class should have a free-text definition which reflects in plain language the logic of any axioms it has, or if no axioms exist, at least helps the reader to recognize what is included or excluded from its category of entity.  This style of definition is called the Aristotelian genus-differentiae form which reference a class's parent class and goes on to differentiate the kinds of entity it matches from those which its siblings would match.
-
-### Multilingual (also by way of synonymy lookup tables)
-Just as an ontology term has a label and free-text definition, it may also have language variants of those, enabling it to be displayed in multiple languages.
+### Textual definition
+A class should have a textual definition which reflects in plain language the logic of any important axioms it has, or if no such axioms exist, at least helps the reader to recognize what is included or excluded from its category of entity.  This style of definition is called the Aristotelian genus-differentiae form which reference a class's parent class and goes on to differentiate the kinds of entity it matches from those which its siblings would match.  OBO Foundry has more advice about [definitions](https://obofoundry.org/principles/fp-006-textual-definitions.html).
 
 ### Curation standards
-Terms are explained in the singular, are provided in a single language like English, and are lowercase except for proper noun parts.
+Terms are explained in the singular, are provided in a primary language like English, and are lowercase except for proper noun parts.  (The singular requirement allows curators (or computers) to fashion plural terms with reference to singular ones - and their characteristics, distinguishing characteristics of an item from characteristics of a group of items.)
+
+### Synonyms and Multilingual labels
+Just as an ontology term has a label and textual definition, it may also have synonyms and language variants of those, improving its findability in free text search engines, and enabling it to be displayed in multiple languages. 
 
 ### Authorship
-Credit is provided for term curators and definition sources.
+Contributor credits are provided for term curators and definition sources.
 
 ## Data Schemas: Database view and ontology view
 A Separation of concern ...

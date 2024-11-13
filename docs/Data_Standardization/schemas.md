@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Data Schema Standardisation
-parent: Data Standardization
+parent: Data Standardisation
 nav_order: 2
 ---
 
-# Data Schema Standardization
+# Data Schema Standardisation
 {: .no_toc }
 
 ## Table of Contents
@@ -75,7 +75,7 @@ We use the term "structured vocabulary" (also known as controlled vocabulary) to
 ## Sources of standardized attributes
 Ontology terms might be precise in terms of describing a thing that is measured, but not how it is measured.  Data schema attributes often go further in specifying datatype values.  Standardized attributes are found in e.g. flat [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/docs/packages/) repository standards and more structured [Phenopacket standards](https://phenopacket-schema.readthedocs.io/).  More details on using structured vocabulary including ontologies to standardize data is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
 
-## Training resources ###
+## Training resources
 TBD
 
 Authors: Damion Dooley

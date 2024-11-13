@@ -4,7 +4,7 @@ title: Data Standardisation
 nav_order: 6
 ---
 
-# Data Standardization
+# Data Standardisation
 {: .no_toc }
 
 ## Table of Contents
@@ -66,7 +66,7 @@ If anticipated early in the project design cycle, data schema components can be 
   * Project file names and folder structure should be standardized.
   * Regardless of whether a data schema is reusing elements from other schemas, it is important to impose attribute and table [naming conventions](https://climatesmartagcollab.github.io/Documentation-en/Data_Standardization/schemas.html) on its home-grown components.  This is done mainly to avoid issues in applying or developing software scripts for validation, transformation, and/or database interaction.
 
-## Training resources ###
+## Training resources
 TBD
 
 Authors: Damion Dooley
