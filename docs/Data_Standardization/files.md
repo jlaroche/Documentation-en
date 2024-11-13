@@ -16,9 +16,7 @@ nav_order: 7
 
 ### File standards
 
-#### File Character sets ####: 
-Data "serialized" into a text file will be encoded as strings characters from a character set which may include accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard (used to encode most web pages) includes character encodings that cover many languages and [dingbats](https://en.wikipedia.org/wiki/Dingbat) to boot!  Sadly software often has to guess what encoding an input file has, and some versions of programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
-
+File names, formats, and character sets each have standardization aspects.
 
 ## Why standardize file names?
 
@@ -28,6 +26,10 @@ Benefits include:
 * Uniform file names make it easier to sort and arrange files in alphabetical or chronological order. 
 * Promotes a shared understanding of how files are named and organized.
 * version numbers or dates in file names helps manage version control effectively.
+
+#### File Character sets ####: 
+Data "serialized" into a text file will be encoded as strings characters from a character set which may include accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard (used to encode most web pages) includes character encodings that cover many languages and [dingbats](https://en.wikipedia.org/wiki/Dingbat) to boot!  Sadly software often has to guess what encoding an input file has, and some versions of programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
+
 
 ## Data Management Plans
 
