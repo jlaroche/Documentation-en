@@ -21,7 +21,7 @@ The definition of "**ontology**" in Wikipedia speaks to its historical roots as 
 Most ontologies were created after the web itself, and as inter-agency collaborative open source projects, many are still evolving, taking on new terms and deprecating archaic ones, refining their own domain(s) of content, and handing terms over to other ontologies for more focuse curation, and visa versa.  The sociotechnical complexity of locating or building fit-for-purpose ontology resources can be frustrating, and we discuss metrics for success here too.
 
 ## Advantages of ontology format
-Our data standardization writeup has explained the need for a kind of structured vocabulary with features that make it reusable, infrastructure friendly, and semantically precise.  Ontologies, combined with some curational best-practices, have these features built-in in a way that other structured vocabulary formats can't match.  Not all ontologies are created equal, and there are dead ones, and incomplete or very poorly designed ones.  Consequently, ontology collaboratives such as the OBO Foundry have created [curational principles](https://obofoundry.org/principles/fp-000-summary.html) to enable recognition of gold standard ontologies. We will also mention some other structured vocabulary formats like the common Simple Knowledge Organization System [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) that though logically and/or semantically lax, may be useful since they have institutionally-backed resources, and meet the needs of library science style category indexes, like the [AGROVOC](https://www.fao.org/agrovoc/) agricultural concepts, definitions and relationships vocabulary.
+Our data standardization writeup has explained the need for kinds of structured vocabulary covering agriculture and related domains with features that make them reusable, infrastructure friendly, and semantically precise.  Ontologies, combined with some curational best-practices, have these features built-in in a way that other structured vocabulary formats can't match.  Not all ontologies are created equal, and there are dead ones, and incomplete or very poorly designed ones.  Consequently, ontology collaboratives such as the OBO Foundry have created [curational principles](https://obofoundry.org/principles/fp-000-summary.html) to enable recognition of gold standard ontologies. We will also mention some other structured vocabulary formats like the common Simple Knowledge Organization System [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) that though logically and/or semantically lax, may be useful since they have institutionally-backed resources, and meet the needs of library science style category indexes, like the [AGROVOC](https://www.fao.org/agrovoc/) agricultural concepts, definitions and relationships vocabulary.
 
 A good ontology should be:
 
@@ -33,16 +33,18 @@ A good ontology should be:
 In this context an ontology is capable of providing:
 
 ### Permanent URLs
-Each ontology term is given a URL and attached to a web service which returns human and computer readable information about the term. The term URL is expected to exist in perpetuity; a deprecation and replacement term reference system exists which facilitates database updates in the face of evolving ontologies. 
+Each ontology term is given a URL and attached to a web service which returns human and computer readable information about the term, such as label, definition, synonyms, parent and child entities. The term URL is expected to exist in perpetuity; a deprecation and replacement term reference system exists which facilitates database updates in the face of evolving ontologies. 
 
 ### Hierarchic terms and inheritance
 Each term appears in a hierarchy of terms of the same type, whether it be material entities, process types, or characteristics of things.  Here we more aptly switch to referencing an ontology term as an **entity** or **class**, because ontologies enable logical reasoners to take in an ontological description of some entity, and figure out what classes it fits or belongs to in an ontology, e.g. an animal which "'has part' exactly 4 legs" can be categorized as a quadriped.  Any subclass (a child of a given class) of "quadruped" is also expected to have 4 legs due to the power of inheritance that OWL ontologies have.  If a reasoner is run on an ontology with a "quadruped" class, and a subclass of quadruped has only 3 legs, a logical error will result.  This highlites a quality control metric - logical consistency - that can be obtained within an ontology, and also when reasoning over merged ontologies that share the same set of relations.
+
+A hierarchical organization of terms also sets up using branches of an ontology as a source of picklist choices for some attribute, equivalent to lookup tables that  computer science developers are familiar with.
 
 ### Entity or class properties
 Naturally an ontology needs a language of relations (called object properties) such as "located in" or "part of" and a way to use them in expressing logical statements, called axioms, that must be true for a class to match some given candidate entity. There is also some functionality for associating specific values or ranges to class axioms (e.g. "pi 'has value' "3.1415927"^^xsd:decimal).
 
 ### Free-text definition
-A class should have a free-text definition which reflects in plain language the logic of any axioms it has, or if no axioms exist, at least helps the reader to recognize what is included or excluded from its category of entity.  This style of definition is called the Aristotelian genus-differentiae form which reference a class's parent class and goes on to differentiate its members from its siblings.
+A class should have a free-text definition which reflects in plain language the logic of any axioms it has, or if no axioms exist, at least helps the reader to recognize what is included or excluded from its category of entity.  This style of definition is called the Aristotelian genus-differentiae form which reference a class's parent class and goes on to differentiate the kinds of entity it matches from those which its siblings would match.
 
 ### Curation standards
 Terms are explained in the singular, are provided in a single language like English, and are lowercase except for proper noun parts.
@@ -50,15 +52,7 @@ Terms are explained in the singular, are provided in a single language like Engl
 ### Authorship
 Credit is provided for term curators and definition sources.
 
-Unique, globally resolvable identifiers to source ontology, definition, and synonymy.
-
-* No term deletion, only deprecation and replacement
-* Ontology picklists are familiar to computer science developers as lookup tables
-* Multilingual (also by way of synonymy lookup tables)
-* Object properties (relations between objects)
-* Machine readable
-
-
+### Multilingual (also by way of synonymy lookup tables)
 
 * Phenopacket output products
 
