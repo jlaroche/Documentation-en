@@ -15,7 +15,7 @@ nav_order: 2
 {:toc}
 
 ## Standardizing a data schema
-Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities.  First we work through a description and recommendations on the mixture of language currently present in describing data standard content at various layers and in various software applications and storage technologies, and then discuss how ontologies can be layered on to help determine semantic comparability.
+Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities.  First we work through a description and recommendations on the mixture of language currently present in describing data schema content, and then discuss how structured vocabularies, including ontologies, can be layered on to help determine semantic comparability.
 
 * **Values**: A form field, record field, table row field, spreadsheet cell, computational object/class attribute or property or slot, or variable can hold a **value** (aka data item or datum).
 
