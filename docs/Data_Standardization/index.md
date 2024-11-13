@@ -24,12 +24,13 @@ Ultimately, a key requirement for success is a **well-coordinated technical lang
 Harmonized [Data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) contribute both to peer-to-peer data sharing as well as data catalogue visibility.  This involves standardising project datasets / schemas down to the field name and picklist value level - or at least map them to their semantic equivalents.  Idiosyncratic names are replaced in favour of terms referenced in standards.  
 Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities. We cover standardized ways of expressing tables, attributes and their values in the [Data Schema Standardization](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/schemas.md) page.
 
-* Human curated summary (metadata) information:
-  * **Dataset subject area keywords** can be standardized via ontology-driven (as opposed to free-text) keyword menus; These are being increasingly adopted by data catalogues, for example, [Fairsharing.org's](https://fairsharing.org/) liberal use of EDAM ontology [topics]([https://edamontology.org/page](https://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=topic_0003) and other [OBO Foundry](https://obofoundry.org/) ontologies for content description.
-  * Spatiotemporal scope (e.g. a sample set's collection date and location(s)) can be described using structured vocabularies like Wikidata's geographical knowledge base, e.g. [Canada](https://www.wikidata.org/wiki/Q16).
-* Data schema derived information, including lists of standards and structured vocabularies in use, can be referenced in agency or public FAIR data catalogues.  
-* Dataset derived information, including record counts and serialization byte size information, frequencies of demographic / contextual keyword use, harmonized dataset table and field-level information (e.g. counts of plant_growth_medium kinds occuring ) can be published.
+Dataset findability also benefits from:
 
+* **Data schema derived information**, including lists of standards and structured vocabularies in use, can be referenced in agency or public FAIR data catalogues.  
+* **Dataset derived information**, including record counts and serialization byte size information, frequencies of demographic / contextual keyword use, harmonized dataset table and field-level information (e.g. counts of plant_growth_medium kinds occuring ) can be published.
+
+* **Human curated summary (metadata) information**: including **Dataset subject area keywords** which can be standardized via ontology-driven (as opposed to free-text) keyword menus; These are being increasingly adopted by data catalogues, for example, [Fairsharing.org's](https://fairsharing.org/) liberal use of EDAM ontology [topics]([https://edamontology.org/page](https://bioportal.bioontology.org/ontologies/EDAM?p=classes&conceptid=topic_0003) and other [OBO Foundry](https://obofoundry.org/) ontologies for content description.  Beyond keywords, dimensional metadata such as a sample set's spatiotemporal collection date and geographic location(s)) can be described using structured vocabularies like Wikidata's geographical knowledge base, e.g. [Canada](https://www.wikidata.org/wiki/Q16).
+ 
 ### Experimental design and protocol metadata
 
 Going beyond subject areas, this metadata enables researchers to judge pertinence of a dataset arising from samples or observations where the data itself doesn't clearly define the experimental groups or context of collection, or sensitive methodology involved.
