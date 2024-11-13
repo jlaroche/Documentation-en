@@ -53,7 +53,7 @@ Encountering a value that has a syntactic structure beyond random characters sug
   
 * **Permanent identifiers**: Given the need to reference vocabulary and other data resources on the web, standardization work often involves a kind of value called a **permanent identifier** reference that points to a resource like a dataset, document, or vocabulary term detail page.  For a web reference this is called a **permanent URL or "purl"**, such as [http://purl.obolibrary.org/obo/OBI_0001167](http://purl.obolibrary.org/obo/OBI_0001167).  Once a purl goes into circulation on the web, it is expected to remain there so it can always retrieve the resource, or, if what it points to becomes archaic or discontinued, a "deprecated" code response. Additionally, if a newer vocabulary or resource replaces it, a replacement identifier is indicated. This way data content can be updated to harmonize and simplify federation and querying.
   There are registries of purl-endowed resources which include databases and ontologies, such as the W3C Permanent Identifier Community Group's [purl registry](https://w3id.org/), and [bioregistry.io](https://bioregistry.io/) which has more of a life science research focus and is an excellent place for projects to add their own resource links (when a vocabularies referenced in a database is not yet represented on the web).
-  
+
 ## Structured vocabulary
 We use the term "structured vocabulary" (also known as controlled vocabulary) to describe a file of vocabulary terms (such as a taxonomy or ontology) that includes attribute details to some extent - such as plain english or other language names, coding names, definitions, and semantics such as hierarchies of terms.  Agencies can build up a roster of recommended structured vocabularies for use in their project and infrastructure data schemas.  We are especially interested in structured vocabularies backed by multi-agency collaborative curation, and which have a purl for each term that can be found in searchable portals.  Leading examples of such vocabularies and search portals include:
 
@@ -64,6 +64,11 @@ We use the term "structured vocabulary" (also known as controlled vocabulary) to
   * [Fairsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard) has a standards registry dedicated to workflow and ontology resources.
   * [Wikidata](https://www.wikidata.org/wiki/) has an extensive set of country, region, city/town, and other geolocation identifiers obtainable by searching for a desired name.
   * [GOLD](https://gold.jgi.doe.gov/ecosystem_classification) ecosystem classification system in flat [tabular format](https://gold.jgi.doe.gov/download?mode=ecosystempaths), and its OBO Foundry [ontologized equivalent](https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml).
+
+## Sources of attribute standards
+These days more standardized naming conventions exist 
+
+https://phenopacket-schema.readthedocs.io/en/latest/biosample.html
 
 More details on using structured vocabulary including ontologies to standardize data is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
 
