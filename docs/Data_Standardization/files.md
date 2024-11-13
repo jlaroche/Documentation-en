@@ -14,6 +14,11 @@ nav_order: 7
 1. TOC
 {:toc}
 
+### File standards ###
+
+#### File Character sets ###: Data "serialized" into a text file will be encoded as strings characters from a character set which may include accents etc. A popular [UTF-8](https://en.wikipedia.org/wiki/UTF-8) standard (used to encode most web pages) includes character encodings that cover many languages and [dingbats](https://en.wikipedia.org/wiki/Dingbat) to boot!  Sadly software often has to guess what encoding an input file has, and some versions of programs like [MS Excel](https://support.guidebook.com/hc/en-us/articles/360016372414) have their own coding, leading to confusion in translation.
+
+
 ## Why standardize file names?
 
 Standardizing file naming conventions helps researchers better organize their own work and collaborate with others. 
@@ -26,6 +31,9 @@ Benefits include:
 ## Data Management Plans
 
 All research projects for the Genome Canada's Climate-Smart Agriculture and Food Systems Initiative have created a [Data Management Plan (DMP)](../datamanagementplan.md) using the [DMP Assistant of Portage](https://dmp-pgd.ca/). This DMP typically includes recommended file naming protocols for each research project.
+
+
+
 
 ## Recommendations
 
