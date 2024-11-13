@@ -55,7 +55,7 @@ Encountering a value that has a syntactic structure beyond random characters sug
   There are registries of purl-endowed resources which include databases and ontologies, such as the W3C Permanent Identifier Community Group's [purl registry](https://w3id.org/), and [bioregistry.io](https://bioregistry.io/) which has more of a life science research focus and is an excellent place for projects to add their own resource links (when a vocabularies referenced in a database is not yet represented on the web).
   
 ## Structured vocabulary
-We use the term "structured vocabulary" (also known as controlled vocabulary) to describe a file of vocabulary terms (such as a taxonomy or ontology) that includes attribute details to some extent - such as plain english or other language names, coding names, definitions, and semantics such as hierarchies of terms.  Agencies can build up a roster of recommended structured vocabularies for use in their project and infrastructure data schemas.  We are especially interested in structured vocabularies which have a purl for each term, available 24/7, that can be found in searchable portals.  Leading examples of vocabulary search portals including:
+We use the term "structured vocabulary" (also known as controlled vocabulary) to describe a file of vocabulary terms (such as a taxonomy or ontology) that includes attribute details to some extent - such as plain english or other language names, coding names, definitions, and semantics such as hierarchies of terms.  Agencies can build up a roster of recommended structured vocabularies for use in their project and infrastructure data schemas.  We are especially interested in structured vocabularies backed by multi-agency collaborative curation, and which have a purl for each term that can be found in searchable portals.  Leading examples of such vocabularies and search portals include:
 
   * The international CGIAR agricultural research agency has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
   * [AgroPortal](https://agroportal.lirmm.fr/) supported by a number of leading French research agencies is another source of agriculture research vocabulary.
@@ -65,7 +65,7 @@ We use the term "structured vocabulary" (also known as controlled vocabulary) to
   * [Wikidata](https://www.wikidata.org/wiki/) has an extensive set of country, region, city/town, and other geolocation identifiers obtainable by searching for a desired name.
   * [GOLD](https://gold.jgi.doe.gov/ecosystem_classification) ecosystem classification system in flat [tabular format](https://gold.jgi.doe.gov/download?mode=ecosystempaths), and its OBO Foundry [ontologized equivalent](https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml).
 
-More details on applying suitable ontologies to dataset standardization is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
+More details on using structured vocabulary including ontologies to standardize data is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
 
 ## Training resources ###
 TBD
