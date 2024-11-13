@@ -62,7 +62,7 @@ Encountering a value that has a syntactic structure beyond random characters sug
   * [OLS](https://www.ebi.ac.uk/ols4) The European Molecular Biology Laboratory (EMBL) European Bioinformatics Institute ontology search interface reflects the agencies commitment to developing ontologies in the life science area.
   * [Fairsharing.org](https://fairsharing.org/search?fairsharingRegistry=Standard) has a standards registry dedicated to workflow and ontology resources.
   * [Wikidata](https://www.wikidata.org/wiki/) has an extensive set of country, region, city/town, and other geolocation identifiers obtainable by searching for a desired name.
-  * [GOLD](https://gold.jgi.doe.gov/ecosystem_classification) ecosystem classification system and its OBO Foundry [ontologized equivalent](https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml).
+  * [GOLD](https://gold.jgi.doe.gov/ecosystem_classification) ecosystem classification system in flat [tabular format](https://gold.jgi.doe.gov/download?mode=ecosystempaths), and its OBO Foundry [ontologized equivalent](https://github.com/cmungall/gold-ontology/blob/main/gold_definitions.yaml).
 
 More details on applying suitable ontologies to dataset standardization is provided in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) section.
 
