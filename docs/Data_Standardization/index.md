@@ -21,8 +21,7 @@ Ultimately, a key requirement for success is a **well-coordinated technical lang
 
 ### Data schema and dataset content summary
 
-Harmonized [Data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) contribute both to peer-to-peer data sharing as well as data catalogue visibility.  This involves standardising project datasets / schemas down to the field name and picklist value level - or at least map them to their semantic equivalents.  Idiosyncratic names are replaced in favour of terms referenced in standards.  
-Data schemas, whether they capture the syntactic and semantic details of a single data table, or cover many interlocked tables or transformations between them, are a fertile ground for standardization opportunities. We cover standardized ways of expressing tables, attributes and their values in the [Data Schema Standardization](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/schemas.md) page.
+Harmonized [Data schemas](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Documentation/schemas.md) contribute both to peer-to-peer data sharing as well as data catalogue visibility.  This involves standardising project datasets / schemas down to the field name and picklist value level - or at least map them to their semantic equivalents.  Idiosyncratic names are replaced in favour of terms referenced in standards.  We cover standardized ways of expressing tables, attributes and their values in the [Data Schema Standardization](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/schemas.md) page.
 
 Dataset findability also benefits from:
 
