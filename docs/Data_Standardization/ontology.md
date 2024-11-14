@@ -23,22 +23,24 @@ Most ontologies were created after the web itself, and as inter-agency collabora
 ## Ontology user roles
 People use ontologies in different ways, and thankfully most people don't need to know the complexity of building or maintaining one.
 
-* User: 
-* Implementer
-* Curator
+* **User**: Users may not even know that they are using ontology-driven terminology, since in user interfaces, the ids of ontology terms are usually hidden away. For researcher users, they probably benefit from knowing some favoured ontologies pertinent to their discipline, for use as reference material, and to understand how much of their discipline knowledge is covered semantically.  Expert users can contribute to the feedback loop on new term requests or revisions.
+
+* **Implementer**: A programmer or developer who has been tasked with reusing existing ontologies in some application, including databases.  This person will typically need to know how to judge the quality of an ontology, contribute to an agency's recommendations for ontology use, and be able to use scripts to fetch and refresh ontology terms or branches from remote repositories for use in applications.  They will need to know at least about the different kinds of ontology term (class, instance, material entity, process, relation etc.)
+
+* **Curator**: An ontology curator needs to know chunks of their ontology classes and relations, and as well the curation process for handling new term requests, and the build system for developing new releases. Since ontologies are often defacto evolving standards, curators should aspire to that level of quality control.
 
 ## Advantages of ontology format
 Our data standardization writeup has explained the need for kinds of structured vocabulary covering agriculture and related domains with features that make them reusable, infrastructure friendly, and semantically precise.  Ontologies, combined with some curational best-practices, have these features built-in in a way that other structured vocabulary formats can't match.  Not all ontologies are created equal, and there are dead ones, and incomplete or very poorly designed ones.  Consequently, ontology collaboratives such as the OBO Foundry have created [curational principles](https://obofoundry.org/principles/fp-000-summary.html) to enable recognition of gold standard ontologies. 
 
-We will also mention some other structured vocabulary formats like the common Simple Knowledge Organization System [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) that though logically and/or semantically lax, may be useful since they have institutionally-backed resources, and meet the needs of library science style category indexes, like the [AGROVOC](https://www.fao.org/agrovoc/) agricultural concepts, definitions and relationships vocabulary.
+There are other popular structured vocabulary formats like the common Simple Knowledge Organization System [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) that though logically and/or semantically lax, may be useful since they have institutionally-backed resources, and meet the needs of library science style catalogue navigation of categories, like the [AGROVOC](https://www.fao.org/agrovoc/) vocabulary of agricultural concepts.
 
-A brief note about the ontology terminology detailed below: One may open an OWL ontology in a popular ontology editor like Stanford's [Protege](https://protege.stanford.edu/) and see hierarchies and lists of terms in different places; mousing over a term will yeild a unique purl identifier for it.  Ontologies express a few kinds of term: "**classes**"" which are categories of things, and "**instances**"" which are things that (by explicit statement, or by reasoned inference) belong to one or more class categories.  Two kinds of relation are offered, namely "**object properties**" like "part of" that connect between classes or instances, and "**data properties**" like "has value" that connect between instances (and sometimes classes) and particular values.
+A brief preview about the ontology terminology detailed below: One may open an OWL ontology in a popular ontology editor like Stanford's [Protege](https://protege.stanford.edu/) and see hierarchies and lists of terms in different places; mousing over a term will yeild a unique purl identifier for it.  Ontologies express a few kinds of term: "**classes**"" which are categories of things, and "**instances**"" which are things that (by explicit statement, or by reasoned inference) belong to one or more class categories.  Two kinds of relation are offered, namely "**object properties**" like "part of" that connect between classes or instances, and "**data properties**" like "has value" that connect between instances (and sometimes classes) and particular values.
 
 A good ontology should be:
 
 * in an [OWL format](https://en.wikipedia.org/wiki/Web_Ontology_Language) which has a few [syntax variations](https://oboacademy.github.io/obook/explanation/owl-format-variants/) and logical reasoning powers.
 * hosted on a public versioned repository such as GitHub.
-* have a build system that assembles the various parts of an ontology in addition to applying quality control checks to ensure edits haven't created contradictions or other unintended consequences.  (The [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) is one tool used here.)
+* have a build system that assembles the various parts of an ontology in addition to applying quality control checks to ensure edits haven't created contradictions or other unintended consequences.  (The [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) is one such tool.)
 * supported by volunteer or funded curators (ideally experts from multiple collaborating organizations) who can respond to user inquiries and requests.
 * available on one or more ontology lookup services.
 * connections between terms and their synonyms, to solve the problem of people not being able to [locate](https://oboacademy.github.io/obook/explanation/intro-to-ontologies/#we-cant-find-what-were-looking-for) a good term to use just because they're using a synonym to search with.
@@ -58,7 +60,7 @@ Note that a term can have more than one parent in an ontology, and if that occur
 A hierarchical organization of terms also enables using branches of an ontology as a source of picklist choices for some attribute, similar to term lookup tables that computer science developers are familiar with.
 
 ### Relations between entity kinds
-Naturally an ontology needs a language of relations between classes (called "**object properties**") such as "located in" or "part of" and a way to use them in expressing logical statements, called axioms, that must be true for an entity to match to some given class. There is also some functionality (using "**data properties**") for associating specific values or ranges to class axioms (e.g. "pi 'has value' "3.1415927"^^xsd:decimal).
+An ontology needs a language of relations between classes (called "**object properties**") such as "located in" or "part of" and a way to use them in expressing logical statements, called axioms, that must be true for an entity to match to some given class. There is also some functionality (using "**data properties**") for associating specific values or ranges to class axioms (e.g. "pi 'has value' "3.1415927"^^xsd:decimal).
 
 ### Curation standards
 There are a number of ontology curation communities, often based around a top-level ontology such as [BFO](https://basic-formal-ontology.org/) or [UFO](https://philarchive.org/rec/PORUUF), each with their own practices.  In the OBO Foundry community, terms are explained in the singular, are provided in a primary language like English, and are lowercase except for proper noun parts.  (The singular requirement allows curators (or computers) to fashion plural terms and their characteristics with reference to singular ones, though english still has its odd cases to consider - e.g. a "pair of pants"!)
@@ -86,21 +88,21 @@ material entity references, processes, characteristics, and information referenc
 * "[**methane**](http://purl.obolibrary.org/obo/CHEBI_16183)" is a material (chemical) in the CHEBI ontology (defn. "A one-carbon compound in which the carbon is attached by single bonds to four hydrogen atoms. It is a colourless, odourless, non-toxic but flammable gas".)
 * "**concentration of methane in air**" is a characteristic.
 * "[**methane measurement**](http://purl.obolibrary.org/obo/NCIT_C186080)" is a process in the NCIThesaurus ontology (defn. "The determination of the amount of methane present in a sample.).
-* "**methane assay concentration datum**" is a data item output of a methane measurement process (aka assay) that provides a measure of it in parts per million.
 
 Or, for carbon dioxide:
 
 * "**[carbon dioxide](http://purl.obolibrary.org/obo/CHEBI_16526)**" is a chemical in the CHEBI ontology (defn. "A one-carbon compound with formula CO2 in which the carbon is attached to each oxygen atom by a double bond. A colourless, odourless gas under normal conditions, [...].")
-* "[**concentration of carbon dioxide in air**](http://purl.obolibrary.org/obo/ENVO_04000004)" with defn. "The concentration of carbon dioxide when measured in air."
+* "[**concentration of carbon dioxide in air**](http://purl.obolibrary.org/obo/ENVO_04000004)" is a quality (aka. characteristic) with defn. "The concentration of carbon dioxide when measured in air."
 * "[**carbon dioxide assay**](http://purl.obolibrary.org/obo/OBI_2100001)" is a process with defn. "An analyte assay that measures the abundance of carbon dioxide".  Note however none of its children are about sampling air.
-* "**carbon dioxide concentration datum**" is a data item output of a carbon dioxide assay. that provides a measure of it in parts per million.
 
-Unfortunately one might not find the above terms in ontologies you expect would have them; for example, while **[concentration of methane in liquid water](http://purl.obolibrary.org/obo/ENVO_3100020)** exists in ENVO, there is no term for methane concentration in air - this would have to be a New Term Request (NTR) for that ontology. 
+Unfortunately one might not find the above terms in the ontologies you expect would have them; for example, while **[concentration of methane in liquid water](http://purl.obolibrary.org/obo/ENVO_3100020)** exists in ENVO, there is no term for methane concentration in air - this would have to be a New Term Request (NTR) for that ontology.
+
+A cautionary note about choosing between a "[characteristic](http://purl.obolibrary.org/obo/BFO_0000020)" term or an "information" (aka "[information content entity](http://purl.obolibrary.org/obo/IAO_0000030)", ICE, or its subclass "data item") term to map to a data schema attribute. If an appropriate characteristic term is available, that is probably the best choice. For example, given a choice for a "temperature" attribute, choose a "[temperature](http://purl.obolibrary.org/obo/PATO_0000146)" PATO characteristic rather than an OBI "[temperature measurement datum](http://purl.obolibrary.org/obo/OBI_0003079)". (Every data item about a measure of a characteristic should properly presume that the characteristic term itself is established.  In theory one could generate a corresponding data item term for every measurable characteristic held in an ontology, but this shadow hierarchy of data item terms creates a bloated hierarchy that is hard to manually manage, so various ontologies within OBO Foundry are shying away from that.)
 
 **The DCC Hub team will assist in ensuring NTRs get submitted and looked after in the appropriate ontologies.**
 
 ## Knowledege graph modelling
-Research and other agencies often rely upon tabular data formats - spreadsheets or SQL databases - and are only considering knowledge graphs in an experimental way.  Meanwhile ontologists often attempt to add relations and attempt recommended models (graph components, including [nanopublications](https://pmc.ncbi.nlm.nih.gov/articles/PMC7959622) that could contribute to larger potentially federated graph databases. Some data schema systems like LinkML provide a cross-walk between these two worlds, but in this project we focus on use of ontologies for project data in tabular format.
+Research and other agencies often rely upon tabular data formats - spreadsheets or SQL databases - and are only considering knowledge graphs in an experimental way.  Meanwhile ontologists often add relations and attempt data structure models (i.e. graph components, including [nanopublications](https://pmc.ncbi.nlm.nih.gov/articles/PMC7959622) that could contribute to larger potentially federated graph databases. Some data schema systems like LinkML provide a cross-walk between these two worlds, but in this project we focus on use of ontologies for project data in tabular format.
 
 ## Training
 
@@ -108,10 +110,28 @@ Research and other agencies often rely upon tabular data formats - spreadsheets 
 
 * For more technical users, there is an extensive [OBO Semantic Engineering Training](https://oboacademy.github.io/obook/) website that contains an [ontology introduction](https://oboacademy.github.io/obook/explanation/intro-to-ontologies/), tutorials, how-to guides (for Protege, ODK GitHub etc), reference guides [incl. logic](https://oboacademy.github.io/obook/explanation/subClassOf-vs-equivalentTo/), and other content that has application beyond just OBO Foundry compatible ontologies.
 
-### Resources
+## Resources
 There are many places to find structured vocabularies such as ontologies and taxonomies as a source for terms.
 
 * The organization CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
 * [AgroPortal](https://agroportal.lirmm.fr/) is another source of agriculture research vocabulary.
 * The above resources relay a number of [OBO Foundry](https://obofoundry.org/) life science ontologies related to agriculture, biology, climate, and ecology research, as detailed in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) documentation section.
 
+### Useful ontologies for agricultural research
+We welcome additions to this list!
+
+Name | Prefix | Description 
+--|--|--
+[Agronomy Ontology](https://obofoundry.org/ontology/agro.html) | AGRO | "Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments."
+[Cell Ontology](https://obofoundry.org/ontology/cl.html) | CL | "The Cell Ontology is a structured controlled vocabulary for cell types in animals."
+[Chemical Entities of Biological Interest](https://obofoundry.org/ontology/chebi.html) | CHEBI | "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds."
+[Environment Ontology](https://obofoundry.org/ontology/envo.html) | ENVO | "An ontology of environmental systems, components, and processes."
+[Food Ontology](https://foodon.org) | FOODON | "A broadly scoped ontology representing entities which bear a food role. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals."
+[Gene Ontology](https://obofoundry.org/ontology/go.html) | GO | Provides "a uniform way to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data"
+[NCBI organismal classification](https://obofoundry.org/ontology/ncbitaxon.html) | NCBITaxon | "An ontology representation of the NCBI organismal taxonomy"
+[Mondo Disease Ontology](https://obofoundry.org/ontology/mondo.html) | MONDO | "A global community effort to harmonize multiple disease resources to yield a coherent merged ontology." It covers both human specific disease, non-human animal disease, and infectious disease, including zoonotic disease.
+[Phenotype And Trait Ontology](https://obofoundry.org/ontology/pato.html) | PATO | An ontology of phenotypic qualities (properties, attributes or characteristics).
+[Plant Ontology](https://archive.plantontology.org/) | PO | That "describes plant anatomy and morphology and stages of development for all plants."
+[Plant Stress Ontology](https://obofoundry.org/ontology/pso.html) | PSO | "The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter."
+[UBERON](https://obofoundry.org/ontology/uberon.html) | UBERON | "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies."
+[Vertebrate Breed Ontology](https://monarch-initiative.github.io/vertebrate-breed-ontology/) | VBO | "\[Is] restricted to non-human vertebrate animal species. It covers breeds and breed populations for livestock, companion animals, and laboratory animals."
