@@ -11,7 +11,7 @@ All Interdisciplinary Challenge Teams (ICTs) for the Genome Canada's Climate-Sma
 {: .highlight }
 Share contents of your DMP with your team so all your project members know data management expectations.
 
-Data Management Plans are one of the foundations of good research data management (RDM), an international best practice, and increasingly required by institutions and funders, including Canada's three major research funding agencies as outlined in their Research Data Management Policy. 
+Data Management Plans are one of the foundations of good research data management (RDM), an international best practice, and increasingly required by institutions and funders, including Canada's three major research funding agencies as outlined in their [Research Data Management Policy](https://science.gc.ca/site/science/en/interagency-research-funding/policies-and-guidelines/research-data-management/tri-agency-research-data-management-policy). 
 
 Data Management Plans contain important information for project participants such as how to name files, how and where to save data securely, what file formats to use, and what are relevant ethical and legal compliance considerations. 
 
