@@ -16,7 +16,7 @@ nav_order: 3
 
 All datasets have a schema, either implicit or explicit. The goal of the Semantic Engine is to take your knowledge of the data and document that explicitly using a schema. 
 
-To easily write machine-readable schemas in the OCA schema language, the organization Agri-food Data Canada from the University of Guelph has developed a friendly user-interface for documenting data and using the schemas that have been generated.
+To easily write machine-readable schemas in the OCA schema language, the organization Agri-food Data Canada (ADC) from the University of Guelph has developed a friendly user-interface for documenting data and using the schemas that have been generated.
 
 ## Using the Semantic Engine
 

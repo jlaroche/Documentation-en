@@ -8,7 +8,7 @@ nav_order: 1
 ---
 # Welcome to the Documentation Site
 
-Here the Data Hub is collecting resources that will be useful to Data Hub members. 
+This is where you'll find all the resources that will be useful to members of the DataHub. 
 
 If you would like to see more content hosted here let us know in the Data Hub Discussion board.
 
