@@ -34,16 +34,16 @@ Our data standardization writeup has explained the need for kinds of structured 
 
 There are other popular structured vocabulary formats like the common Simple Knowledge Organization System [SKOS](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System) that though logically and/or semantically lax in comparison to ontology, may be useful since they have institutionally-backed resources, and meet the needs of library science style catalogue navigation of categories, like the [AGROVOC](https://www.fao.org/agrovoc/) vocabulary of agricultural concepts.
 
-A brief preview about the ontology terminology detailed below: One may open an OWL ontology in a popular ontology editor like Stanford's [Protege](https://protege.stanford.edu/) and see hierarchies and lists of terms in different places; mousing over a term will yield a unique purl identifier for it.  Ontologies express a few kinds of term: "**classes**"" which are categories of things, and "**instances**"" which are things that (by explicit statement, or by reasoned inference) belong to one or more class categories.  Two kinds of relation are offered, namely "**object properties**" like "part of" that connect between classes or instances, and "**data properties**" like "has value" that connect between instances (and sometimes classes) and particular values.
+A brief preview about the ontology terminology detailed below: One may open an OWL ontology in a popular ontology editor like Stanford's [Protege](https://protege.stanford.edu/) and see hierarchies and lists of terms in different places; mousing over a term will yield a unique purl identifier for it.  Ontologies express a few kinds of term / entity: A "**class**"" is a category of thing, and an "**instance**"" is a thing that (by explicit statement, or by reasoned inference) belongs to one or more class categories.  Two kinds of relation are offered, namely an "**object property**" relation like "part of" that connect between classes or instances, and a "**data property**" like "has value" that connects between an instance and a particular value.
 
 A good ontology should be:
 
-* in an [OWL format](https://en.wikipedia.org/wiki/Web_Ontology_Language) which has a few [syntax variations](https://oboacademy.github.io/obook/explanation/owl-format-variants/) and logical reasoning powers.
+* in an [OWL format](https://en.wikipedia.org/wiki/Web_Ontology_Language). OWL has a few [syntax variations](https://oboacademy.github.io/obook/explanation/owl-format-variants/). (It also hasa few logical reasoning power "profiles" depending on what kinds of logical expressions are allowed in an ontology).
 * hosted on a public versioned repository such as GitHub.
 * have a build system that assembles the various parts of an ontology in addition to applying quality control checks to ensure edits haven't created contradictions or other unintended consequences.  (The [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) is one such tool.)
 * supported by volunteer or funded curators (ideally experts from multiple collaborating organizations) who can respond to user inquiries and requests.
 * available on one or more ontology lookup services.
-* connections between terms and their synonyms, to solve the problem of people not being able to [locate](https://oboacademy.github.io/obook/explanation/intro-to-ontologies/#we-cant-find-what-were-looking-for) a good term to use just because they're using a synonym to search with.
+* listing term synonyms, to solve the problem of people not being able to [locate](https://oboacademy.github.io/obook/explanation/intro-to-ontologies/#we-cant-find-what-were-looking-for) a good term to use just because they're using a synonym to search with.
 * using a shared set of relationships and term categories with other ontologies to facilitate interoperability and data federation.  This is currently not so easy to attain insofar as there are many stand-alone ontologies, and it usually takes conformance with some [upper level ontology](https://en.wikipedia.org/wiki/Upper_ontology) to see such congruence, and there are a handful of those to choose from too.
 
 To support their own projects, research or other agencies can also have their own private ontologies and/or mirrored versions of publicly available ontologies; this provides version control and reliability in the face of internet disruptions.
@@ -53,7 +53,7 @@ In this context an ontology is capable of providing:
 ### Permanent URLs
 Each ontology term is given a URL and attached to a web service which returns human and computer readable information about the term, such as label, definition, synonyms, parent and child entities. The term's purl is expected to exist in perpetuity; a deprecation and replacement term reference system exists which facilitates database updates in the face of evolving ontologies. 
 
-### Hierarchic terms and inheritance
+### Hierarchic terms, inheritance, and reasoning
 Each term appears in a hierarchy of terms of the same type, whether it be material entities, process types, or characteristics of things.  Here we more aptly switch to referencing an ontology term as an **entity** or **class** because ontologies enable logical reasoners to take in an ontological description of some entity, and figure out what classes (categories) it fits or belongs to in an ontology, e.g. an animal which "'has part' exactly 4 legs" can be categorized as a member of a "quadriped" class.  Any subclass (a child of a given class) of "quadruped" is also expected to have 4 legs due to the power of inheritance that OWL ontologies have.  If a reasoner is run on an ontology with a quadruped class, and it or its descendent has an instance which has only 3 legs, a logical error will result.  This highlites a quality control metric - logical consistency - that can be obtained within an ontology, and also when reasoning "over" merged ontologies that share the same set of relations, and over ontologies + data described by them.
 
 Note that a term can have more than one parent in an ontology, and if that occurs, it is called a [polyhierarchic](https://oboacademy.github.io/obook/explanation/intro-to-ontologies/#polyhierarchy) ontology. Simple one-parent ontology design is encouraged to identify the "primary" or essential parent for each class, but reasoning can yield a polyhierarchic ontology due to the other classes a subordinate class may have.
@@ -64,7 +64,7 @@ A hierarchical organization of terms also enables using branches of an ontology 
 An ontology needs a language of relations between classes (called "**object properties**") such as "located in" or "part of" and a way to use them in expressing logical statements, called axioms, that must be true for an entity to match to some given class. There is also some functionality (using "**data properties**") for associating specific values or ranges to class axioms (e.g. "pi 'has value' "3.1415927"^^xsd:decimal).
 
 ### Curation standards
-There are a number of ontology curation communities, often based around a top-level ontology such as [BFO](https://basic-formal-ontology.org/) or [UFO](https://philarchive.org/rec/PORUUF), each with their own practices.  In the OBO Foundry community, terms are explained in the singular, are provided in a primary language like English, and are lowercase except for proper noun parts.  (The singular requirement allows curators (or computers) to fashion plural terms and their characteristics with reference to singular ones, though english still has its odd cases to consider - e.g. a "pair of pants"!)
+There are a number of ontology curation communities, often based around a top-level ontology such as [BFO](https://basic-formal-ontology.org/) or [UFO](https://philarchive.org/rec/PORUUF), each with their own practices.  The OBO Foundry community offers a set of [best practices](https://obofoundry.org/principles/fp-000-summary.html), for example that terms are explained in the singular, have labels which are provided in a primary language like English, and are lowercase except for proper noun parts, and do not have underscores, and have numeric purls so that relabling can occur without impacting database references.  The singular requirement allows curators (or computers) to fashion plural terms and their characteristics with reference to singular ones.
 
 ### Textual definition
 A class should have a textual definition which reflects in plain language the logic of any important axioms it has, or if no such axioms exist, at least helps the reader to recognize what is included or excluded from its category of entity.  This style of definition is called the Aristotelian genus-differentiae form which reference a class's parent class and goes on to differentiate the kinds of entity it matches from those which its siblings would match.  OBO Foundry has more advice about [definitions](https://obofoundry.org/principles/fp-006-textual-definitions.html).
@@ -116,7 +116,7 @@ There are many places to find structured vocabularies such as ontologies and tax
 
 * The organization CGIAR has published a resource of common [Ontologies for agriculture](https://bigdata.cgiar.org/ontologies-for-agriculture/).
 * [AgroPortal](https://agroportal.lirmm.fr/) is another source of agriculture research vocabulary.
-* The above resources relay a number of [OBO Foundry](https://obofoundry.org/) life science ontologies related to agriculture, biology, climate, and ecology research, as detailed in the [ontology](https://github.com/ClimateSmartAgCollab/Documentation-en/blob/main/docs/Data_Standardization/ontology.md) documentation section.
+* The above resources relay a number of [OBO Foundry](https://obofoundry.org/) life science ontologies related to agriculture, biology, climate, and ecology research, a number of which are listed below.
 
 ### Useful ontologies for agricultural research
 We welcome additions to this list!
@@ -132,7 +132,9 @@ Name | Prefix | Description
 [NCBI organismal classification](https://obofoundry.org/ontology/ncbitaxon.html) | NCBITaxon | "An ontology representation of the NCBI organismal taxonomy"
 [Mondo Disease Ontology](https://obofoundry.org/ontology/mondo.html) | MONDO | "A global community effort to harmonize multiple disease resources to yield a coherent merged ontology." It covers both human specific disease, non-human animal disease, and infectious disease, including zoonotic disease.
 [Phenotype And Trait Ontology](https://obofoundry.org/ontology/pato.html) | PATO | An ontology of phenotypic qualities (properties, attributes or characteristics).
-[Plant Ontology](https://archive.plantontology.org/) | PO | That "describes plant anatomy and morphology and stages of development for all plants."
+[Plant Ontology](https://archive.plantontology.org/) | PO | This ontology "describes plant anatomy and morphology and stages of development for all plants."
 [Plant Stress Ontology](https://obofoundry.org/ontology/pso.html) | PSO | "The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter."
 [UBERON](https://obofoundry.org/ontology/uberon.html) | UBERON | "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies."
 [Vertebrate Breed Ontology](https://monarch-initiative.github.io/vertebrate-breed-ontology/) | VBO | "\[Is] restricted to non-human vertebrate animal species. It covers breeds and breed populations for livestock, companion animals, and laboratory animals."
+
+Authors: Damion Dooley
